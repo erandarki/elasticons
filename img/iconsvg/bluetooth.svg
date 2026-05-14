@@ -1,0 +1,5 @@
+<svg id="bluetooth" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<style><![CDATA[
+#bluetooth{pointer-events: all}#bluetooth #bluetooth-s-path1 {animation: bluetooth-s-path1_s_do 2000ms linear infinite normal backwards}@keyframes bluetooth-s-path1_s_do { 0% {stroke-dashoffset: 0} 100% {stroke-dashoffset: 63}}
+]]></style>
+<path id="bluetooth-s-path1" d="M22.33,15.423922L32.847813,25.940075L27.867002,30.9201v-19.9201l4.980811,4.980025L22.33,26.496178" transform="matrix(1.004011 0 0 1.004011 -15.699566 -9.044121)" stroke-dasharray="59,2,0,2"/></svg>

@@ -1,0 +1,5 @@
+<svg id="refresh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<style><![CDATA[
+#refresh{pointer-events: all}#refresh #refresh-s-g1_tr {animation: refresh-s-g1_tr__tr 1000ms linear infinite normal backwards}@keyframes refresh-s-g1_tr__tr { 0% {transform: translate(12px,12px) rotate(0deg)} 100% {transform: translate(12px,12px) rotate(360deg)}}
+]]></style>
+<g id="refresh-s-g1_tr" transform="translate(12,12) rotate(0)"><g id="refresh-s-g1" transform="translate(-7.5,-8.999994)"><path id="refresh-s-path1" d="M14.5,12.877c-1.3647,2.4594-3.988,4.1239-7,4.1239s-5.63527-1.6645-7-4.1239" fill="none"/><path id="refresh-s-path2" d="M5.1154,12.8672h-4.6154v4.6327" fill="none"/><path id="refresh-s-path3" d="M0.5,5.12305c1.36473-2.45942,3.98797-4.123996,7-4.123996s5.6353,1.664576,7,4.123996" fill="none"/><path id="refresh-s-path4" d="M9.8846,5.13281h4.6154v-4.632721" fill="none"/></g></g></svg>

@@ -1,0 +1,141 @@
+{
+  "AI": [
+    "sparks",
+    "binary-code",
+    "code-flip"
+  ],
+  "Arrows": [
+    "download",
+    "upload",
+    "menu-arrow",
+    "cloud-download",
+    "cloud-upload",
+    "refresh",
+    "inbox-arrow-down",
+    "up-down-arrows",
+    "code-flip",
+    "log-out",
+    "log-in"
+  ],
+  "Analytics": [
+    "bar-chart",
+    "checklist"
+  ],
+  "Connectivity": [
+    "bluetooth",
+    "globe-team",
+    "globe",
+    "antenna",
+    "touch-id",
+    "binary-code",
+    "hourglass",
+    "refresh",
+    "confetti",
+    "globe-bounce",
+    "network-connection",
+    "log-out",
+    "log-in",
+    "link"
+  ],
+  "Fitness": [
+    "woman-figure",
+    "bicycle",
+    "treadmill-workout"
+  ],
+  "Nature": [
+    "fire",
+    "star-spark",
+    "day-night",
+    "recycle",
+    "sunny-rainy",
+    "sun-moon",
+    "sun",
+    "moon"
+  ],
+  "Science": [
+    "head-gears",
+    "brain-gear",
+    "atom"
+  ],
+  "Home": [
+    "shower-head",
+    "recycle",
+    "trash-bin",
+    "checklist"
+  ],
+  "Account & Access": [
+    "lock-unlock",
+    "menu-arrow",
+    "menu-close",
+    "approve",
+    "deny",
+    "globe",
+    "cloud-download",
+    "cloud-upload",
+    "bell",
+    "hourglass",
+    "refresh",
+    "confetti",
+    "control-horizontal",
+    "slider-vertical",
+    "envelope-bounce",
+    "globe-bounce",
+    "inbox-arrow-down",
+    "lock-shake",
+    "user-bounce",
+    "log-out",
+    "log-in",
+    "checklist"
+  ],
+  "Gaming": [
+    "maze",
+    "star-spark",
+    "sparks",
+    "happy-sad-masks",
+    "hourglass",
+    "happy-sad",
+    "refresh",
+    "confetti",
+    "carousel-slider"
+  ],
+  "Medical": [
+    "headache"
+  ],
+  "Multimedia": [
+    "happy-sad-masks",
+    "infinite",
+    "heartbreak",
+    "binary-code",
+    "headphones",
+    "happy-sad",
+    "refresh",
+    "group-bounce",
+    "user-bounce"
+  ],
+  "Animals": [
+    "dog-love",
+    "cat-love"
+  ],
+  "Devices": [
+    "shredder",
+    "printer"
+  ],
+  "Food & Drink": [
+    "coffee-love",
+    "recycle"
+  ],
+  "Social": [
+    "love-letter",
+    "heartbreak",
+    "happy-sad",
+    "group-bounce",
+    "user-bounce",
+    "link"
+  ],
+  "Weather": [
+    "sunny-rainy",
+    "sun-moon",
+    "sun",
+    "moon"
+  ]
+}

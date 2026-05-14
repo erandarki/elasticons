@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WP53Q55V');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive animated SVG icons for your next project.">
+  <meta name="keywords" content="SVG line animation, SVG stroke animation, animated SVG lines, animated SVG strokes, SVG line drawing animation, SVG stroke drawing animation, SVG path animation, CSS SVG line animation, CSS SVG stroke animation, responsive animated SVG icons, outline SVG icons, animated SVG icons for websites, icons for Shopify stores, icons for SaaS landing pages, minimal UI icons for web designers, Stroke-width adjustable SVGs, customizable animated SVG icons, lightweight SVG icons, scalable animated SVG icons, modern SVG icon set, creative animated SVG icons, unique SVG icons for developers, eye-catching SVG animations, interactive SVG icons, dynamic SVG icon collection, Micro-interactions for web apps, Animated SVG icon collection for UI/UX design, SVG icons with animation effects, Engaging SVG icons for digital products, Animated SVG icons for mobile apps, Customizable SVG icons with animation, High-quality animated SVG icons, Versatile SVG icon set with animations">
+  <meta name="author" content="Eran Darki">
+  <link rel="shortcut icon" id="favicon" href="./img/favicon-light.svg" type="image/x-icon">
+  <title>elasticons &#8211; animated SVG icons</title>
+  <script>
+    // Theme and layout immediate execution to prevent UI "jumping" or "flashing"
+    (function() {
+      const savedTheme = localStorage.getItem('bsTheme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-bs-theme', theme);
+
+      const savedLayout = localStorage.getItem('layout-style');
+      // Default to fluid if no preference is saved
+      const isFluid = savedLayout ? (savedLayout === 'fluid') : true;
+      
+      // Apply a temporary CSS rule to the document head to handle containers before the DOM is fully parsed.
+      if (!isFluid) {
+        const style = document.createElement('style');
+        style.innerHTML = `.container-fluid { max-width: 1320px; margin-right: auto; margin-left: auto; }`;
+        style.id = 'temp-layout-fix';
+        document.head.appendChild(style);
+      }
+    })();
+  </script>
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://elasticons.com/"/>
+   <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/lenis.css">
+  <!-- Bootstrap -->
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <!-- Supabase & Payment -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  <!-- Auth and page logics  -->
+  <script src="./js/auth.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <script src="./js/jszip.min.js" defer></script>
+  <!-- Custom JS -->
+  <script src="./js/theme-and-layout.js" defer></script>
+  <script src="./js/detect-os.js" defer></script>
+  <script src="./js/tooltips.js" defer></script>
+</head>
+
+<body class="d-flex flex-column">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP53Q55V"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar py-3 pb-0">
+    <div class="container-fluid">
+      <div class="navbar-brand ps-3">
+        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.6678 2.05817C15.7529 0.325825 19.6502 -0.731976 23.0764 0.602964C24.6947 1.23351 26.0787 2.27847 26.8968 3.77137C27.7324 5.29607 27.8279 7.019 27.3263 8.65641C26.3662 11.7909 23.2965 14.5674 18.8774 16.5677C15.0803 18.2864 11.3544 18.6498 8.14281 18.0629C8.30971 18.8454 8.65072 19.4517 9.06812 19.9266C9.9586 20.9397 11.503 21.6969 13.5566 21.9099C17.7179 22.3415 22.798 20.4225 25.3914 16.2268C26.1202 15.0478 27.658 14.6882 28.8262 15.4237C29.9944 16.1591 30.3506 17.7111 29.6218 18.89C25.8708 24.9585 18.8023 27.5125 13.0468 26.9155C10.1419 26.6142 7.28573 25.4816 5.33812 23.2658C3.67779 21.3768 2.87475 18.9231 3.0788 16.1097C2.13432 15.5045 1.30526 14.7936 0.617073 14.0001C-0.289705 12.9545 -0.184939 11.365 0.851121 10.4499C1.88721 9.53475 3.46219 9.64048 4.36898 10.6861C6.2308 12.833 11.0042 14.6164 16.8368 11.9763C20.7039 10.2259 22.2208 8.28647 22.5627 7.17024C22.7122 6.68234 22.6374 6.39608 22.5337 6.20676C22.4125 5.98571 22.088 5.61178 21.2805 5.29718C19.855 4.7418 17.6065 5.04358 15.0922 6.45541C12.786 7.75037 10.7565 9.71556 9.6343 11.7007C9.50693 11.926 9.39693 12.0862 9.13848 12.0722C6.05437 11.9049 5.6679 8.12701 7.78514 5.87822C9.21207 4.36263 10.9032 3.04903 12.6678 2.05817Z" fill="currentColor"/>
+        </svg>
+      </div>
+      
+      <div class="d-flex align-items-center pe-3">
+        <!-- Login / Logout -->
+        <div id="login-btn" class="btn btn-custom border-0 rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">Login</div>
+        <!-- Container layout icons -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="condense" viewBox="0 0 23 18">
+            <path d="M11.6351 1L11.5044 17M18.0416 6.16239L15.0661 9.13808M15.0661 9.13808L18.0416 12.1134M15.0661 9.13808L22.0088 9.13813M4.96723 12.1134L7.94273 9.1376M7.94273 9.1376L4.96723 6.16239M7.94273 9.1376L1 9.13774" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+          <symbol id="expand" viewBox="0 0 23 18">
+            <path d="M11.6351 1L11.5044 17M19.0333 6.16239L22.0088 9.13808M22.0088 9.13808L19.0333 12.1134M22.0088 9.13808L15.0661 9.13813M3.97549 12.1134L1 9.1376M1 9.1376L3.97549 6.16239M1 9.1376L7.94273 9.13774" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+        </svg>
+        <!-- Container layout toggle button -->
+        <input class="d-none" type="checkbox" name="" id="container-layout" checked>
+        <label id="layout-tooltip" for="container-layout" class="container-layout-btn btn btn-custom border-0 rounded-circle px-1 py-2" data-bs-toggle="tooltip" data-bs-title="Condense layout">
+          <svg class="container-layout-active" width="1.5rem" height="1rem"><use href="#condense"></use></svg>
+        </label>
+  
+        <!-- Theme color mode icons -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="dark" viewBox="0 0 16 16">
+            <path d="M13.9999 8.52667C13.8951 9.66147 13.4692 10.7429 12.7721 11.6445C12.075 12.5461 11.1356 13.2305 10.0637 13.6177C8.99188 14.0049 7.83192 14.0787 6.7196 13.8307C5.60728 13.5827 4.5886 13.023 3.78275 12.2172C2.97691 11.4113 2.41723 10.3927 2.16921 9.28033C1.92118 8.16801 1.99508 7.00806 2.38224 5.9362C2.7694 4.86434 3.45382 3.92491 4.35541 3.22784C5.257 2.53076 6.33847 2.10487 7.47327 2C6.80888 2.89884 6.48917 4.0063 6.57229 5.12094C6.65541 6.23559 7.13584 7.28337 7.9262 8.07373C8.71656 8.86409 9.76435 9.34452 10.879 9.42765C11.9936 9.51077 13.1011 9.19106 13.9999 8.52667Z"/>
+          </symbol>
+          <symbol id="light" viewBox="0 0 16 16">
+            <path d="M8.00008 0.666992V2.00033M8.00008 14.0003V15.3337M2.81341 2.81366L3.76008 3.76033M12.2401 12.2403L13.1867 13.187M0.666748 8.00033H2.00008M14.0001 8.00033H15.3334M2.81341 13.187L3.76008 12.2403M12.2401 3.76033L13.1867 2.81366M11.3334 8.00033C11.3334 9.84127 9.84103 11.3337 8.00008 11.3337C6.15913 11.3337 4.66675 9.84127 4.66675 8.00033C4.66675 6.15938 6.15913 4.66699 8.00008 4.66699C9.84103 4.66699 11.3334 6.15938 11.3334 8.00033Z"/>
+          </symbol>
+        </svg>
+        <!-- Theme color mode switch button -->
+        <input class="d-none" type="checkbox" name="" id="bs-theme" checked>
+        <label for="bs-theme" class="color-switch-btn btn btn-custom border-0 rounded-circle p-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Switch to light mode">
+          <svg class="theme-icon-active" width="1rem" height="1rem" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"><use href="#light"></use></svg>
+        </label>
+        <!-- Menu -->
+         <div class="dropdown">
+          <button class="btn btn-custom border-0 d-flex rounded-circle p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg width="16" height="16" viewBox="0 0 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 8H14"/>
+              <path d="M4 3H12"/>
+              <path d="M4 13H12"/>
+            </svg>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#pricesModal">Pricing</div></li>
+            <li><div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#faqModal">FAQs</div></li>
+            <li><div class="dropdown-item" data-bs-target="#contactModal" data-bs-toggle="modal">Contact</div></li>
+            <li><div class="dropdown-item" data-bs-target="#licenseModal" data-bs-toggle="modal">License</div></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#termsModal">Terms</div></li>
+            <li><div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</div></li>
+            <li><div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#refundsModal">Refunds</div></li>
+            <li id="logout-btn" class="d-none"><hr class="dropdown-divider"><div class="dropdown-item">Log Out</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-fluid py-5">
+    <div class="text-center px-3 mb-3">
+      <svg class="headline" style="--char-total: 10;" viewBox="0 0 390 99" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path style="--char-index: 0;" d="M47.1324 73.3061C48.0185 73.3061 48.7001 73.7151 49.1772 74.533C49.7225 75.3509 49.9952 76.4756 49.9952 77.9069C49.9952 80.6333 49.3476 82.7463 48.0526 84.2458C45.5307 87.313 41.9523 90.1416 37.3174 92.7316C32.7507 95.3217 27.8432 96.6167 22.5949 96.6167C15.4382 96.6167 9.88316 94.6742 5.9299 90.7891C1.97663 86.904 0 81.5875 0 74.8397C0 70.1367 0.988316 65.7745 2.96495 61.7531C4.94158 57.6635 7.66797 54.4259 11.1441 52.0403C14.6884 49.6547 18.6758 48.4619 23.1061 48.4619C27.0594 48.4619 30.2288 49.6547 32.6144 52.0403C35 54.3577 36.1928 57.5272 36.1928 61.5486C36.1928 66.2516 34.4888 70.3071 31.0808 73.7151C27.741 77.0549 22.0497 79.7131 14.0068 81.6898C15.7108 84.8251 18.9484 86.3928 23.7196 86.3928C26.7868 86.3928 30.2629 85.3363 34.148 83.2234C38.1013 81.0423 41.5093 78.2136 44.372 74.7375C45.1899 73.7832 46.1101 73.3061 47.1324 73.3061ZM21.3681 58.4814C18.8462 58.4814 16.6991 59.9468 14.927 62.8777C13.223 65.8086 12.371 69.3529 12.371 73.5106V73.7151C16.3924 72.7608 19.5618 71.3295 21.8793 69.421C24.1967 67.5126 25.3554 65.2974 25.3554 62.7755C25.3554 61.4804 24.9805 60.458 24.2308 59.7083C23.5492 58.8904 22.5949 58.4814 21.3681 58.4814Z"/>
+        <path style="--char-index: 1;" d="M80.4194 73.3058C81.3055 73.3058 81.9871 73.7147 82.4642 74.5326C83.0095 75.3506 83.2821 76.4752 83.2821 77.9066C83.2821 80.6329 82.6346 82.7459 81.3395 84.2454C78.4087 87.8579 75.2052 90.8228 71.729 93.1402C68.321 95.4577 64.4359 96.6164 60.0737 96.6164C54.0757 96.6164 49.6112 93.89 46.6803 88.4372C43.8176 82.9844 42.3863 75.9299 42.3863 67.2736C42.3863 58.9581 43.4428 49.484 45.5557 38.851C47.7368 28.2181 50.9062 19.0847 55.064 11.4508C59.2899 3.81694 64.2996 0 70.0932 0C73.3649 0 75.9209 1.53359 77.7612 4.60078C79.6696 7.59981 80.6239 11.928 80.6239 17.5852C80.6239 25.6962 78.3746 35.1022 73.8761 45.8033C69.3775 56.5044 63.2772 67.1032 55.5752 77.5998C56.0523 80.3944 56.8361 82.4051 57.9267 83.632C59.0172 84.7907 60.4486 85.37 62.2207 85.37C65.0153 85.37 67.469 84.5862 69.582 83.0185C71.695 81.3827 74.3873 78.6222 77.6589 74.7371C78.4768 73.7829 79.397 73.3058 80.4194 73.3058ZM67.8439 10.1217C66.2763 10.1217 64.5041 12.9503 62.5275 18.6076C60.5508 24.2649 58.8128 31.2853 57.3133 39.669C55.8137 48.0526 54.9958 56.0954 54.8595 63.7975C59.6988 55.8228 63.5499 47.8481 66.4126 39.8734C69.2753 31.8306 70.7066 24.5034 70.7066 17.8919C70.7066 12.7118 69.7524 10.1217 67.8439 10.1217Z"/>
+        <path style="--char-index: 2;" d="M85.9137 96.6162C81.6878 96.6162 78.3139 95.0826 75.792 92.0154C73.2701 88.9482 72.0091 84.9268 72.0091 79.9511C72.0091 74.4983 73.2701 69.3523 75.792 64.5129C78.3139 59.6054 81.6537 55.6862 85.8115 52.7554C90.0374 49.7563 94.5018 48.2568 99.2049 48.2568C100.704 48.2568 101.693 48.5636 102.17 49.177C102.715 49.7223 103.158 50.7447 103.499 52.2442C104.93 51.9715 106.43 51.8352 107.997 51.8352C111.337 51.8352 113.007 53.028 113.007 55.4136C113.007 56.845 112.496 60.253 111.474 65.6376C109.906 73.4759 109.122 78.9287 109.122 81.9959C109.122 83.0183 109.361 83.8362 109.838 84.4496C110.383 85.0631 111.065 85.3698 111.883 85.3698C113.178 85.3698 114.745 84.5519 116.586 82.916C118.426 81.2121 120.914 78.4857 124.049 74.7369C124.867 73.7826 125.787 73.3055 126.81 73.3055C127.696 73.3055 128.377 73.7145 128.854 74.5324C129.4 75.3503 129.672 76.475 129.672 77.9063C129.672 80.6327 129.025 82.7457 127.73 84.2452C124.935 87.7213 121.97 90.6522 118.835 93.0378C115.7 95.4234 112.666 96.6162 109.736 96.6162C107.486 96.6162 105.407 95.8664 103.499 94.3669C101.659 92.7992 100.261 90.6863 99.3071 88.028C95.7628 93.7534 91.2983 96.6162 85.9137 96.6162ZM89.5943 86.29C91.0938 86.29 92.5252 85.4039 93.8884 83.6317C95.2516 81.8596 96.2399 79.5081 96.8533 76.5772L100.636 57.7651C97.7735 57.8333 95.1153 58.9238 92.6615 61.0368C90.2759 63.0816 88.3674 65.808 86.9361 69.216C85.5047 72.6239 84.7891 76.2364 84.7891 80.0533C84.7891 82.1663 85.198 83.734 86.0159 84.7564C86.902 85.7788 88.0948 86.29 89.5943 86.29Z"/>
+        <path style="--char-index: 3;" d="M140.379 98.8657C136.835 98.8657 134.109 98.0477 132.2 96.4119C130.36 94.7761 129.44 92.9358 129.44 90.891C129.44 89.1188 130.087 87.5852 131.382 86.2902C132.677 84.9952 134.586 84.3476 137.108 84.3476C137.994 84.3476 139.016 84.4499 140.175 84.6544C141.402 84.7907 142.322 84.8929 142.935 84.9611C142.867 83.1889 142.458 81.519 141.709 79.9513C141.027 78.3837 140.141 76.8841 139.05 75.4528C137.96 73.9533 136.937 72.6582 135.983 71.5677C133.87 75.5891 131.757 78.9289 129.644 81.5872C127.599 84.2454 125.35 86.7673 122.896 89.1529C121.67 90.3798 120.375 90.9932 119.011 90.9932C117.921 90.9932 117.035 90.6183 116.353 89.8686C115.672 89.0507 115.331 88.0623 115.331 86.9036C115.331 85.5404 115.808 84.2795 116.762 83.1208L118.091 81.4849C121.84 76.8501 124.669 73.0331 126.577 70.0341C127.736 68.0575 129.099 65.4333 130.667 62.1617C132.234 58.8218 133.768 55.3798 135.267 51.8355C136.562 48.8364 139.255 47.3369 143.344 47.3369C145.253 47.3369 146.582 47.5073 147.332 47.8481C148.081 48.1889 148.456 48.7342 148.456 49.4839C148.456 49.8929 148.32 50.5404 148.047 51.4265C147.775 52.3126 147.4 53.1986 146.923 54.0847C145.696 56.5385 145.082 58.6173 145.082 60.3213C145.082 61.3437 145.423 62.4684 146.105 63.6952C146.855 64.9221 147.979 66.4557 149.479 68.296C151.66 71.1587 153.296 73.6125 154.386 75.6573C155.545 77.6339 156.124 79.815 156.124 82.2006C156.124 82.8822 156.056 83.8364 155.92 85.0633C159.26 83.7683 163.179 80.3262 167.677 74.7371C168.495 73.7829 169.415 73.3058 170.438 73.3058C171.324 73.3058 172.006 73.7147 172.483 74.5326C173.028 75.3506 173.301 76.4752 173.301 77.9065C173.301 80.4966 172.653 82.6096 171.358 84.2454C167.95 88.4713 164.678 91.3681 161.543 92.9358C158.476 94.4353 154.659 95.2532 150.092 95.3895C147.366 97.7069 144.128 98.8657 140.379 98.8657Z"/>
+        <path style="--char-index: 4;" d="M203.777 73.3053C204.663 73.3053 205.345 73.7143 205.822 74.5322C206.367 75.3501 206.64 76.4748 206.64 77.9061C206.64 80.6325 205.993 82.7454 204.697 84.245C201.767 87.8574 198.563 90.8224 195.087 93.1398C191.611 95.4572 187.623 96.6159 183.125 96.6159C169.22 96.6159 162.268 86.835 162.268 67.2732C162.268 64.2742 162.37 61.2411 162.575 58.1739H158.587C156.543 58.1739 155.145 57.799 154.396 57.0492C153.714 56.2995 153.373 55.1067 153.373 53.4708C153.373 49.6539 154.907 47.7454 157.974 47.7454H163.802C164.96 40.2479 166.733 33.3978 169.118 27.1953C171.504 20.9927 174.366 16.0512 177.706 12.3705C181.114 8.68992 184.761 6.84961 188.646 6.84961C191.509 6.84961 193.758 8.11057 195.394 10.6325C197.03 13.1544 197.847 16.3238 197.847 20.1408C197.847 30.7055 193.417 39.9071 184.556 47.7454H196.007C197.098 47.7454 197.881 47.984 198.359 48.4611C198.836 48.9382 199.074 49.8243 199.074 51.1193C199.074 55.8224 195.223 58.1739 187.521 58.1739H175.048C174.912 61.5819 174.844 64.2401 174.844 66.1486C174.844 73.2372 175.661 78.2128 177.297 81.0755C179.001 83.9382 181.659 85.3696 185.272 85.3696C188.203 85.3696 190.793 84.4835 193.042 82.7114C195.291 80.9392 197.95 78.281 201.017 74.7367C201.835 73.7824 202.755 73.3053 203.777 73.3053ZM185.885 16.6646C184.863 16.6646 183.704 17.9596 182.409 20.5497C181.182 23.0716 179.99 26.6159 178.831 31.1826C177.74 35.6812 176.82 40.6909 176.07 46.2118C180.092 42.7357 183.091 38.8506 185.067 34.5565C187.112 30.1943 188.135 26.241 188.135 22.6967C188.135 18.6753 187.385 16.6646 185.885 16.6646Z"/>
+        <path style="--char-index: 5;" d="M211.709 41.714C208.846 41.714 206.699 41.0665 205.268 39.7715C203.836 38.4083 203.121 36.5339 203.121 34.1483C203.121 31.7627 204.041 29.7861 205.881 28.2184C207.79 26.5826 210.141 25.7646 212.936 25.7646C215.458 25.7646 217.502 26.3781 219.07 27.605C220.638 28.8318 221.422 30.5699 221.422 32.8192C221.422 35.5456 220.536 37.7267 218.763 39.3625C216.991 40.9302 214.64 41.714 211.709 41.714ZM210.891 96.6167C206.461 96.6167 203.223 95.049 201.178 91.9137C199.202 88.7783 198.213 84.6206 198.213 79.4404C198.213 76.3732 198.588 72.4541 199.338 67.6829C200.156 62.8435 201.178 58.345 202.405 54.1873C203.018 52.0061 203.836 50.5066 204.859 49.6887C205.881 48.8708 207.517 48.4618 209.766 48.4618C213.242 48.4618 214.98 49.6205 214.98 51.938C214.98 53.642 214.333 57.5952 213.038 63.7978C211.402 71.2953 210.584 76.3732 210.584 79.0315C210.584 81.0763 210.857 82.6439 211.402 83.7345C211.947 84.825 212.868 85.3703 214.163 85.3703C215.389 85.3703 216.923 84.5183 218.763 82.8143C220.604 81.1103 223.057 78.418 226.125 74.7374C226.943 73.7832 227.863 73.3061 228.885 73.3061C229.771 73.3061 230.453 73.715 230.93 74.5329C231.475 75.3508 231.748 76.4755 231.748 77.9068C231.748 80.6332 231.1 82.7462 229.805 84.2457C223.057 92.493 216.753 96.6167 210.891 96.6167Z"/>
+        <path style="--char-index: 6;" d="M243.004 96.6167C236.324 96.6167 231.11 94.7424 227.361 90.9936C223.68 87.1766 221.84 82.1669 221.84 75.9644C221.84 70.4434 222.931 65.6041 225.112 61.4463C227.293 57.2886 230.122 54.0851 233.598 51.8358C237.074 49.5866 240.72 48.4619 244.537 48.4619C248.286 48.4619 251.183 49.5866 253.228 51.8358C255.341 54.0169 256.397 56.8456 256.397 60.3217C256.397 63.1844 255.75 65.6041 254.455 67.5807C253.228 69.5573 251.592 70.5457 249.547 70.5457C248.252 70.5457 247.196 70.2389 246.378 69.6255C245.628 69.0121 245.253 68.1601 245.253 67.0695C245.253 66.5924 245.321 66.0471 245.458 65.4337C245.594 64.8202 245.696 64.3772 245.764 64.1046C246.105 63.0822 246.275 62.1279 246.275 61.2419C246.275 60.3558 246.037 59.6742 245.56 59.1971C245.151 58.7199 244.537 58.4814 243.719 58.4814C242.152 58.4814 240.686 59.1971 239.323 60.6284C237.96 61.9916 236.869 63.866 236.051 66.2516C235.234 68.6372 234.825 71.2613 234.825 74.124C234.825 82.0306 238.267 85.9838 245.151 85.9838C247.945 85.9838 250.944 85.0637 254.148 83.2234C257.42 81.3149 260.623 78.4863 263.758 74.7375C264.576 73.7832 265.496 73.3061 266.519 73.3061C267.405 73.3061 268.087 73.7151 268.564 74.533C269.109 75.3509 269.382 76.4756 269.382 77.9069C269.382 80.497 268.734 82.6099 267.439 84.2458C264.236 88.199 260.384 91.2662 255.886 93.4473C251.456 95.5603 247.161 96.6167 243.004 96.6167Z"/>
+        <path style="--char-index: 7;" d="M313.259 64.7177C314.145 64.7177 314.827 65.1607 315.304 66.0468C315.781 66.9329 316.02 68.0575 316.02 69.4207C316.02 72.6924 315.031 74.6349 313.055 75.2484C308.965 76.6797 304.466 77.4977 299.559 77.7021C298.264 83.4275 295.708 88.0283 291.891 91.5045C288.074 94.9125 283.746 96.6165 278.907 96.6165C274.817 96.6165 271.307 95.6281 268.376 93.6515C265.513 91.6749 263.332 89.0507 261.833 85.7791C260.333 82.5074 259.583 78.9631 259.583 75.1461C259.583 69.966 260.572 65.3652 262.548 61.3438C264.525 57.2542 267.251 54.0848 270.727 51.8355C274.204 49.5181 278.055 48.3594 282.28 48.3594C287.461 48.3594 291.618 50.1656 294.754 53.7781C297.957 57.3224 299.832 61.7187 300.377 66.967C303.58 66.7625 307.397 66.0809 311.828 64.9222C312.373 64.7859 312.85 64.7177 313.259 64.7177ZM279.724 85.7791C281.906 85.7791 283.78 84.893 285.348 83.1208C286.984 81.3487 288.074 78.7927 288.619 75.4529C286.506 74.0215 284.871 72.1471 283.712 69.8297C282.621 67.5123 282.076 65.0585 282.076 62.4684C282.076 61.3779 282.178 60.2873 282.383 59.1968H281.872C279.145 59.1968 276.862 60.5259 275.021 63.1841C273.249 65.7742 272.363 69.4548 272.363 74.226C272.363 77.9748 273.079 80.8375 274.51 82.8141C276.01 84.7907 277.748 85.7791 279.724 85.7791Z"/>
+        <path style="--char-index: 8;" d="M311.777 96.6167C309.187 96.6167 307.347 95.2536 306.256 92.5272C305.234 89.8008 304.723 85.4386 304.723 79.4405C304.723 70.5797 305.984 62.162 308.505 54.1873C309.119 52.2107 310.107 50.7793 311.47 49.8933C312.902 48.939 314.878 48.4619 317.4 48.4619C318.764 48.4619 319.718 48.6323 320.263 48.9731C320.808 49.3139 321.081 49.9614 321.081 50.9157C321.081 52.0062 320.57 54.46 319.547 58.2769C318.866 61.0033 318.32 63.3889 317.912 65.4337C317.503 67.4785 317.162 70.0004 316.889 72.9994C319.138 67.1377 321.66 62.3665 324.455 58.6859C327.249 55.0052 329.976 52.3811 332.634 50.8134C335.36 49.2458 337.848 48.4619 340.098 48.4619C344.528 48.4619 346.743 50.6771 346.743 55.1075C346.743 57.7657 345.993 62.571 344.494 69.5233C343.199 75.4532 342.551 79.3723 342.551 81.2808C342.551 84.0072 343.54 85.3704 345.516 85.3704C346.879 85.3704 348.481 84.5525 350.321 82.9166C352.23 81.2126 354.752 78.4863 357.887 74.7375C358.705 73.7832 359.625 73.3061 360.648 73.3061C361.534 73.3061 362.215 73.7151 362.692 74.533C363.238 75.3509 363.51 76.4756 363.51 77.9069C363.51 80.6333 362.863 82.7463 361.568 84.2458C358.637 87.8582 355.468 90.8232 352.06 93.1406C348.72 95.458 344.903 96.6167 340.609 96.6167C337.133 96.6167 334.508 95.6284 332.736 93.6518C330.964 91.607 330.078 88.6761 330.078 84.8592C330.078 82.9507 330.555 79.5427 331.509 74.6352C332.395 70.3412 332.839 67.3762 332.839 65.7404C332.839 64.6498 332.464 64.1046 331.714 64.1046C330.828 64.1046 329.567 65.2633 327.931 67.5807C326.363 69.83 324.728 72.829 323.024 76.5778C321.388 80.3266 320.059 84.2798 319.036 88.4376C318.286 91.6411 317.4 93.8222 316.378 94.9809C315.424 96.0715 313.89 96.6167 311.777 96.6167Z"/>
+        <path style="--char-index: 9;" d="M374.255 98.8657C370.711 98.8657 367.984 98.0477 366.076 96.4119C364.236 94.7761 363.315 92.9358 363.315 90.891C363.315 89.1188 363.963 87.5852 365.258 86.2902C366.553 84.9952 368.462 84.3476 370.983 84.3476C371.87 84.3476 372.892 84.4499 374.051 84.6544C375.277 84.7907 376.198 84.8929 376.811 84.9611C376.743 83.1889 376.334 81.519 375.584 79.9513C374.903 78.3837 374.017 76.8841 372.926 75.4528C371.835 73.9533 370.813 72.6582 369.859 71.5677C367.746 75.5891 365.633 78.9289 363.52 81.5872C361.475 84.2454 359.226 86.7673 356.772 89.1529C355.545 90.3798 354.25 90.9932 352.887 90.9932C351.796 90.9932 350.91 90.6183 350.229 89.8686C349.547 89.0507 349.206 88.0623 349.206 86.9036C349.206 85.5404 349.684 84.2795 350.638 83.1208L351.967 81.4849C355.716 76.8501 358.544 73.0331 360.453 70.0341C361.68 68.0575 362.907 65.706 364.133 62.9796C365.428 60.2532 367.098 56.5385 369.143 51.8355C370.438 48.8364 373.13 47.3369 377.22 47.3369C379.129 47.3369 380.458 47.5073 381.207 47.8481C381.957 48.1889 382.332 48.7342 382.332 49.4839C382.332 49.8929 382.196 50.5404 381.923 51.4265C381.65 52.3126 381.276 53.1986 380.798 54.0847C379.572 56.5385 378.958 58.6173 378.958 60.3213C378.958 61.3437 379.299 62.4684 379.981 63.6952C380.73 64.9221 381.855 66.4557 383.354 68.296C385.536 71.1587 387.171 73.6125 388.262 75.6573C389.421 77.6339 390 79.815 390 82.2006C390 85.0633 389.318 87.7897 387.955 90.3798C386.66 92.9017 384.82 94.9465 382.434 96.5142C380.049 98.0818 377.322 98.8657 374.255 98.8657Z"/>
+      </svg>
+    </div>
+    <p class="text-center px-3">Bring your UI to life with premium animated SVG icons</p>
+  </header>
+
+  <main class="container-fluid flex-grow-1">
+    <!-- aside -->
+    <div class="aside">
+      <div class="sticky-top p-3 d-flex flex-column">
+        <div class="form">
+          <div class="d-flex align-items-start justify-content-between" style="height: 42px;">
+            <h5>Customize</h5>
+            <button id="reset-btn" class="d-none btn btn-sm btn-custom rounded-2" disabled>Reset</button>
+            <!-- Go premium button -->
+            <span id="goPremiumBtn" class="d-none" data-bs-toggle="modal" data-bs-target="#pricesModal">
+              <button id="premium-btn" class="btn btn-sm btn-outline-primary rounded-2" data-bs-toggle="tooltip" data-bs-title="Unlock customization and download features.">Go Premium</button>
+            </span>
+          </div>
+          <div style="margin-top: -1rem;">
+            <!-- Animate on -->
+            <div><label>Interaction</label></div>
+            <div class="btn-group w-100" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btn-onload" autocomplete="off" checked>
+              <label class="btn btn-custom py-2" for="btn-onload">Load</label>
+  
+              <input type="radio" class="btn-check" name="btnradio" id="btn-hover" autocomplete="off">
+              <label class="btn btn-custom py-2" for="btn-hover">Hover</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btn-click" autocomplete="off">
+              <label class="btn btn-custom py-2" for="btn-click">Click</label>
+            </div>
+          </div>
+          <div>
+            <label for="iterations">Iteration</label>
+            <div class="slider-wrapper">
+              <input type="range" id="iterations" min="1" max="10" step="1" value="1">
+              1
+            </div>
+            <label for="infinite">
+              <input type="checkbox" name="" id="infinite" class="form-check-input me-1">
+              Infinite
+            </label>
+          </div>
+          <div>
+            <label for="icon-size">Size</label>
+            <div class="slider-wrapper">
+              <input type="range" id="icon-size" min="12" max="100" step="2" value="64">
+              64px
+            </div>
+            <label for="responsive-size">
+              <input type="checkbox" name="" id="responsive-size" class="form-check-input me-1">
+              Responsive
+              <!-- <span class="p-1 text-secondary" data-bs-toggle="tooltip" data-bs-title="Enable this to remove fixed sizes so the icon fits any container or screen size.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </span> -->
+            </label>
+          </div>
+          <div>
+            <label for="icon-stroke">Stroke width</label>
+            <div class="slider-wrapper">
+              <input type="range" id="icon-stroke" min="0.5" max="3" step="0.5" value="1">
+              1px
+            </div>
+          </div>
+          <div class="position-relative">
+            <label for="icon-color">Color</label>
+            <input type="search" id="icon-color" placeholder="Ex: #000000" class="form-control py-2" value="currentColor">
+          </div>
+        </div>
+        <!-- Categories -->
+        <div class="categories mt-5 d-flex flex-column flex-grow-1">
+          <h5 class="mb-3">Categories</h5>
+          <div id="category-filters">
+            <!-- Desktop view -->
+            <div class="category-desktop-view">
+              <div class="text-center m-5">
+                <div class="spinner-border" role="status"></div>
+              </div>
+            </div>
+            <!-- Mobile view -->
+            <div class="category-mobile-dropdown dropdown">
+              <button id="catDropdown" class="d-flex align-items-center flex-grow-1 btn btn-custom dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu w-100"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search -->
+    <div class="d-flex flex-column">
+      <div class="sticky-top p-3 search-wrapper d-grid">
+        <div class="position-relative">
+          <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="search-icon" viewBox="0 0 16 16">
+              <path d="M14 14L11.1 11.1M12.6667 7.33333C12.6667 10.2789 10.2789 12.6667 7.33333 12.6667C4.38781 12.6667 2 10.2789 2 7.33333C2 4.38781 4.38781 2 7.33333 2C10.2789 2 12.6667 4.38781 12.6667 7.33333Z"/>
+            </symbol>
+            <symbol id="clear-icon" viewBox="0 0 16 16">
+              <path d="M12 4L4 12M4 4L12 12"/>
+            </symbol>
+          </svg>
+          <label for="search-input" class="search-input-icon d-flex position-absolute top-50 translate-middle-y">
+            <svg width="1rem" height="1rem" stroke="currentColor" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><use href="#search-icon"></use></svg>
+          </label>
+          <input type="text" id="search-input" class="form-control py-2" placeholder="">
+          <kbd id="search-shortcut-hint" class="position-absolute top-50 end-0 translate-middle-y bg-secondary-subtle"></kbd>
+        </div>
+        <!-- Download all button -->
+        <button id="downloadAllBtn" class="d-none btn btn-custom rounded-2 py-2 ms-3 position-relative" type="button">
+          <span class="visually-hidden spinner-border spinner-border-sm position-absolute top-0 bottom-0 start-0 end-0 m-auto" aria-hidden="true"></span>
+          <span class="download-text" role="status">Download all</span>
+        </button>
+      </div>
+      <div id="icon-grid" class="p-3">
+        <div class="text-center m-5" style="grid-column: 1 / -1;">
+          <div class="spinner-border" role="status"></div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="container text-center p-5 text-secondary mt-auto">
+        <small>Copyright &copy; elasticons</a></small>
+        <div class="vr me-1 ms-2 align-middle"></div>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/elasticonsvg?igsh=MWoyYnh0M2U1eTJ1Zg%3D%3D&utm_source=qr" target="_blank" class="btn btn-custom border-0 rounded-circle p-2 align-middle" style="line-height: 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Download Toast message -->
+  <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+    <div id="toast-message" class="toast align-items-center text-primary-emphasis bg-primary-subtle border border-primary-subtle" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center fs-6 px-3">
+          <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.3045 5.16797C19.2525 5.22797 10.4605 15.108 10.4605 15.108L8.00049 11.964" stroke-dasharray="18,4,18" stroke-dashoffset="40">
+              <animate attributeName="stroke-dashoffset" dur="1" values="40; 40; 18; 18" keyTimes="0; 0.4; 0.7; 1" fill="freeze"/>
+            </path>
+            <path d="M19.304 5.172C20.976 6.96 22 9.36 22 12C22 17.524 17.524 22 12 22C6.476 22 2 17.524 2 12C2 6.476 6.476 2 12 2C14.884 2 17.48 3.22 19.304 5.172Z" stroke-dasharray="63" stroke-dashoffset="63">
+              <animate attributeName="stroke-dashoffset" dur="1" values="63; 0; 0" keyTimes="0; 0.4; 1" fill="freeze" restart="always"/>
+            </path>
+          </svg>
+          <span id="toast-icon-name" class="me-1"></span> downloaded.
+        </div>
+        <button type="button" class="btn-close my-auto mx-3" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prices Modal -->
+  <div class="prices-modal modal fade" id="pricesModal" tabindex="-1" aria-labelledby="pricesModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="d-flex p-3 position-absolute top-0 end-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header flex-column justify-content-center border-0 p-4 pt-5">
+          <div class="modal-title fs-2" id="pricesModalContent">Unlock your perfect icon plan</div>
+          <p class="text-body-secondary text-center mb-0">Choose a single pack download or a yearly premium plan</p>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row row-cols-1 row-cols-lg-2 g-4">
+            <!-- Packs Plan -->
+            <div class="col">
+              <div class="card rounded-3 h-100 bg-transparent">
+                <div class="card-body">
+                  <div class="text-body-emphasis fw-semibold">Packs</div>
+                  <div class="card-title fs-1 text-body-emphasis">$59</div>
+                  <ul class="feature-check list-unstyled text-body-secondary">
+                    <li>A single category icon pack</li>
+                    <li>Animated SVG source files</li>
+                    <li>Editable by any text editor</li>
+                    <li>One-time payment per pack</li>
+                    <li>Responsive size</li>
+                    <li>Commercial use</li>
+                  </ul>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid">
+                  <a href="https://elasticons.lemonsqueezy.com/checkout/buy/72c7d757-bf7a-4bb5-9a94-051a770e4c11?embed=1&media=0&discount=0" class="lemonsqueezy-button btn btn-primary btn-lg" role="button">Buy a Pack</a>
+                </div>
+              </div>
+            </div>
+            <!-- Premium Plan -->
+            <div class="col">
+              <div class="card rounded-3 h-100 border-primary bg-transparent">
+                <div class="card-body">
+                  <div class="text-primary fw-semibold">Premium</div>
+                  <div class="card-title fs-1 text-body-emphasis">$199<span class="fs-6 ms-1 align-middle">/yr</span></div>
+                  <ul class="premium-plan-features feature-check list-unstyled text-body-secondary">
+                    <li>1 x user</li>
+                    <li>Access all icons</li>
+                    <li>A year of updates</li>
+                    <li>New icons every week</li>
+                    <li>One-time payment (No auto-renewal)</li>
+                    <li>Animated SVG source files</li>
+                    <li>Customize on-site</li>
+                    <li>Commercial use</li>
+                  </ul>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid">
+                  <a href="https://elasticons.lemonsqueezy.com/checkout/buy/134f8e10-50c5-427a-abc3-c3db24be6678?embed=1&media=0&discount=0" id="buy-premium-btn" class="lemonsqueezy-button btn btn-primary btn-lg" role="button">Buy Premium</a>
+                  <button id="paid-plan-btn" type="button" class="d-none btn btn-outline-primary btn-lg" data-bs-dismiss="modal" aria-label="Close">
+                    Enjoy downloading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-warning-emphasis bg-warning-subtle border-start border-4 border-warning-subtle p-3 mt-4">
+            <strong>Heads up!</strong> Certain CSS animation properties lack support in Safari.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="termsModalContent">Terms of Service</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small">Last Updated: Feb 19 2026</p>
+          <p class="fw-medium text-body">
+            By accessing or using https://elasticons.com (the "Site"), you agree to these Terms of Service. If you do not agree, please do not use our Site or services.
+          </p>
+
+          <h6>Overview of Services</h6>
+          <p>
+            elasticons offers digital icons for designers and developers (the "Services"). All icons are subject to the proprietary rights of Eran Darki.
+          </p>
+
+          <h6>Licensing and Usage</h6>
+          <p>
+            All icons are provided under the <strong>elasticons License</strong>. Upon purchase, you are granted the rights defined in our <a href="#" data-bs-target="#licenseModal" data-bs-toggle="modal">License</a>. You may not resell, redistribute, or sublicense the icons as standalone products.
+          </p>
+
+          <h6>Payments</h6>
+          <p>
+            <strong>One-Time Payments:</strong> All purchases (Individual Icon Packs and Yearly Plans) are one-time payments. We do not use recurring billing or auto-renewals.
+          </p>
+          <p>
+            <strong>Access Duration:</strong> A "Yearly Plan" provides access to downloads for 365 days from the date of purchase. After this period, access will expire unless a new one-time purchase is made. 
+          </p>
+
+          <h6>Intellectual Property</h6>
+          <p>
+            All content is the property of Eran Darki and is protected by Israeli and international copyright laws.
+          </p>
+
+          <h6>Limitations of Liability</h6>
+          <p>
+            To the maximum extent permitted by law, Eran Darki shall not be liable for any damages arising from your use of the Services. Total liability shall not exceed the amount paid for the service.
+          </p>
+
+          <h6>Governing Law & Jurisdiction</h6>
+          <p>
+            These Terms are governed by the laws of the <strong>State of Israel</strong>. Any legal action shall be brought exclusively in the courts of the <strong>Central District, Israel</strong>.
+          </p>
+
+          <h6>Company Information</h6>
+          <address>
+            <strong>Eran Darki</strong><br>
+            Yosefsberg 1
+            <br>
+            Petah Tikva, 4948603
+            <br>
+            Israel
+            <br>
+            <a href="mailto:contact@elasticons.com">contact@elasticons.com</a>
+          </address>
+
+          <p class="small pt-4">
+            <em>
+              By using elasticons, you acknowledge that you have read, understood, and agreed to these Terms of Service.
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- License -->
+  <div class="modal fade" id="licenseModal" tabindex="-1" aria-labelledby="licenseModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="licenseModalContent">License Agreement</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-medium text-body">By purchasing an elasticons license, you are granted a non-exclusive, non-transferable, worldwide, and perpetual right to use the icons under the following conditions:</p>
+          <h6>Permissions</h6>
+          <ul class="feature-check list-unstyled text-body-secondary">
+            <li>Commercial & Personal Use: You may use elasticons icons for yourself or on behalf of a client in an unlimited number of projects.</li>
+            <li>Multi-Medium: You may use the icons in website designs, applications, software, graphic design, print, and logos with no limit to the number of impressions or end-users.</li>
+            <li>Modification: You may modify the icons (colors, stroke weight, shapes) to create variations that fit your specific project needs.</li>
+            <li>No Attribution Required: While appreciated, you are not required to provide credit to elasticons in your end-products.</li>
+          </ul>
+
+          <h6>Prohibited Use</h6>
+          <ul class="feature-forbidden list-unstyled text-body-secondary">
+            <li>No Redistribution: You cannot sublicense, resell, share, or redistribute the icons (or modified versions of the icons) as standalone files, icon sets, or UI kits.</li>
+            <li>No Competing Products: You cannot use the icons to create a product that competes directly with elasticons (e.g., an icon collection or a stock design site).</li>
+            <li>Primary Value: You cannot use the icons on physical or digital merchandise (like T-shirts or wallpapers) where the icon represents the primary value of the product being sold.</li>
+          </ul>
+
+          <h6>Client Projects</h6>
+          <p class="text-body-secondary">
+            You may use the icons in work for a client. However, the license is granted to <strong>you</strong>. If your client wishes to use the icons for a separate project independent of your work, they must purchase their own license.
+          </p>
+
+          <h6>elasticons Copyright Notice</h6>
+          <p>
+            When using elasticons icons in products that offer downloadable digital files (such as website templates), you must include the following notice in your documentation or legal credits:
+          </p>
+          <blockquote class="border-start ps-3 py-1 text-body-secondary">
+            Copyright &copy; elasticons (https://elasticons.com). 
+            Icons used under license. Redistribution of standalone icon files is not permitted.
+          </blockquote>
+
+          <p class="small mt-4">
+            <em>elasticons icons are copyrighted. Use in source and binary forms, with or without modification, is permitted only if you hold a valid elasticons license. All rights not expressly granted are reserved by Eran Darki.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Privacy Policy -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="privacyModalContent">Privacy Policy</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small">Last Updated: Feb 19 2026</p>
+          <p class="fw-medium text-body">
+            elasticons ("we," "our," or "us") operates https://elasticons.com. This policy explains how we handle your data.
+          </p>
+
+          <h6>Information We Collect</h6>
+          <p><strong>Personal Information:</strong> We collect your email address and purchase history when you buy via <strong>Lemon Squeezy</strong> or request a <strong>Magic Link</strong> via <strong>Supabase</strong>. This is used solely to manage your account and track your <strong>Yearly Plan</strong> access.</p>
+
+          <p><strong>Non-Personal Information:</strong> We automatically collect browser type and usage data via cookies to improve site performance and sessions.</p>
+
+          <h6>Sharing Of Information</h6>
+          <p>
+            We do not sell your information. We share data only with:
+          </p>
+          <ul class="feature-info list-unstyled">
+            <li>Supabase: To manage your passwordless login database.</li>
+            <li>Lemon Squeezy: To process payments and taxes.</li>
+          </ul>
+
+          <h6>Data Security</h6>
+          <p>
+            We do not store credit card numbers or passwords on our servers. All transactions are handled by secure, PCI-compliant providers.
+          </p>
+
+          <h6>Your Rights</h6>
+          <p>
+            You have the right to access, correct, or delete your personal data. Note that deleting your data will remove your access to previous purchases. Contact us at <a href="mailto:contact@elasticons.com">contact@elasticons.com</a> to exercise these rights.
+          </p>
+
+          <h6>Contact Information</h6>
+          <address>
+            <strong>Eran Darki</strong><br>
+            Yosefsberg 1
+            <br>
+            Petah Tikva, 4948603
+            <br>
+            Israel
+            <br>
+            <a href="mailto:contact@elasticons.com">contact@elasticons.com</a>
+          </address>
+          <p class="small pt-4">
+            <em>
+              By using or making a purchase on elasticons, you acknowledge that you have read, understood, and agreed to this Privacy Policy.
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Refunds -->
+  <div class="modal fade" id="refundsModal" tabindex="-1" aria-labelledby="refundsModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="refundsModalContent">Refund Policy</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small">Last Updated: Feb 19 2026</p>
+          <p class="fw-medium text-body">
+            At elasticons, we provide digital goods that are accessible immediately upon purchase. Please read this Refund Policy carefully before making a purchase on https://elasticons.com.
+          </p>
+
+          <h6>All Sales are Final</h6>
+          <p>
+            Due to the nature of digital content, all purchases—including <strong>Individual Icon Packs</strong> and <strong>Yearly Plans</strong>—are non-refundable. Once the digital assets have been made available to you via download, we do not offer refunds, returns, or exchanges.
+          </p>
+
+          <h6>Digital Goods & Right of Withdrawal</h6>
+          <p>
+            By completing your purchase, you acknowledge and agree that you lose your right of withdrawal or "cooling-off" period. This is because the service begins and the digital content is delivered immediately upon the completion of the transaction.
+          </p>
+
+          <h6>Technical Issues</h6>
+          <p>
+            We want to ensure our icons work perfectly for you. If you encounter a verified technical issue, such as a corrupted file in your account after payment, please contact us at <a href="mailto:contact@elasticons.com">contact@elasticons.com</a> within 7 days. We will work to resolve the issue or provide a replacement file. Refunds for technical defects are issued only at our sole discretion if the issue cannot be resolved.
+          </p>
+
+          <h6>Non-Refundable Situations</h6>
+          <p>Refunds will not be granted in the following cases:</p>
+          <ul class="feature-forbidden list-unstyled text-body-secondary">
+            <li>You changed your mind or no longer need the icons.</li>
+            <li>You do not have the specific software required to open or edit the files (e.g., SVG-compatible design tools).</li>
+            <li>You purchased an Icon Pack but have not used the icons yet.</li>
+          </ul>
+
+          <h6>Contact Us</h6>
+          <p>
+            If you have any questions or need assistance with your purchase, please contact:
+          </p>
+          <address>
+            <strong>Eran Darki</strong><br>
+            Yosefsberg 1<br>
+            Petah Tikva, 4948603<br>
+            Israel<br>
+            <a href="mailto:contact@elasticons.com">contact@elasticons.com</a>
+          </address>
+
+          <p class="small mt-4">
+            <em>By making a purchase on elasticons, you acknowledge that you have read, understood, and agreed to this Refund Policy.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="faqModalContent">Frequently Asked Questions</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion accordion-flush">
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                  Is elasticons a subscription?
+                </button>
+              </h2>
+              <div id="collapse-1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  No, elasticons is not a subscription. All our plans—including the Yearly Access and individual Icon Packs—are one-time payments. You will never be charged automatically. When your access expires or you need more icons, you simply choose if and when to buy again.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  How long will I receive icon updates with the yearly plan?
+                </button>
+              </h2>
+              <div id="collapse-2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  New icons are added to the elasticons collection every week. With the Yearly Plan, you will have access to the current collection and any icons added in the following 12 months. After this period, a new purchase is required to receive further updates.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                  How do I get access to elasticons icons?
+                </button>
+              </h2>
+              <div id="collapse-3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  It depends on your plan. For the <strong>Yearly Plan</strong>, you access the collection via a <strong>Magic Link</strong> sent to your email (no passwords needed). For <strong>Icon Packs</strong>, it’s a simple "Pay & Go" process: select your category, complete the purchase, and download your icons immediately without needing to log in.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                  Does my access expire?
+                </button>
+              </h2>
+              <div id="collapse-4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  If you are on the <strong>Yearly Plan</strong>, your download access to the full collection expires 12 months after purchase. For <strong>Icon Packs</strong>, your download link is provided immediately upon purchase. In both cases, you are free to continue using any icons you have already downloaded forever.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                  Can I download all the elasticons icons at once?
+                </button>
+              </h2>
+              <div id="collapse-5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Yes. With our <strong>Yearly Plan</strong>, you can download the entire icon collection at any time using the Download all button in the collection header. Individual Icon Packs grant download access only to the specific category purchased.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                  Can I download an invoice?
+                </button>
+              </h2>
+              <div id="collapse-6" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Yes. Once you complete your purchase, you will receive an email from Lemon Squeezy (our payment provider) with your receipt. Inside that email, there is a button to 'Generate Invoice' where you can add your company details and VAT number if needed.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                  Is there an elasticons license agreement?
+                </button>
+              </h2>
+              <div id="collapse-7" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Yes. You can read the full license <a href="#" data-bs-target="#licenseModal" data-bs-toggle="modal">here</a>.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                  Can I suggest new icons?
+                </button>
+              </h2>
+              <div id="collapse-8" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Sure! We're all ears. You can send us suggestions using <a href="#" data-bs-target="#contactModal" data-bs-toggle="modal">this form</a>. We're also <a href="https://www.instagram.com/elasticonsvg?igsh=MWoyYnh0M2U1eTJ1Zg%3D%3D&utm_source=qr" target="_blank">@elasticonsvg</a> on Instagram.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                  Do these animated icons work on iOS, Android, and Web?
+                </button>
+              </h2>
+              <div id="collapse-9" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Yes, CSS-based animated SVGs generally work across modern web browsers (Chrome, Safari, Firefox, Edge) and Android, offering high-performance, scalable visuals. While they work on iOS, developers may encounter issues with CSS transforms or animations not rendering in Safari* or WebViews, often requiring optimization or specific embedding methods like <code>&lt;object&gt;</code> tags.
+                  <hr>
+                  *While most CSS animation properties are well-supported across modern browsers, Safari remains the least consistent, particularly with filters, morphing, path motion, and advanced SVG features. Hence, certain CSS animation properties lack support in Safari.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                  Can I embed all icon interactions as an image?
+                </button>
+              </h2>
+              <div id="collapse-10" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>
+                    Yes. However, if you need hover effects or clicks, you must use a different embedding method, such as:
+                  </p>
+                  <ul style="padding-left: 1.2rem;">
+                    <li><strong>Inline SVG:</strong> Paste the <code>&lt;svg&gt;</code> code directly into your HTML.</li>
+                    <li><strong>Object Tag:</strong> Use <code>&lt;object type="image/svg+xml" data="image.svg"&gt;</code> to allow external styling and interaction.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+                  Do these animated SVGs work in design tools?
+                </button>
+              </h2>
+              <div id="collapse-11" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>
+                    <strong>Not by dragging and dropping.</strong> Most design tools treat SVG files as static shapes by default, producing a snapshot of the first frame.
+                  </p>
+                  <hr>
+                  <strong>Tips for designers:</strong>
+                  You can still preview animations within Figma and Framer by using plugins or pasting the SVG code into an HTML/Embed component. For other design tools, check what tricks are available for you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+                  What should I do if the checkout page is blank?
+                </button>
+              </h2>
+              <div id="collapse-12" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>This is usually a browser cache "hiccup." To fix it, you need to perform a Hard Reload:</p>
+                  <ol style="padding-left: 1.2rem;">
+                    <li>Right-click the page and select <strong>Inspect</strong>.</li>
+                    <li>Right-click the <strong>Refresh</strong> (<span class="fs-4" style="line-height: 0;">&#10227;</span>) icon at the top of your browser.</li>
+                    <li>Select <strong>Empty Cache and Hard Reload</strong>.</li>
+                  </ol>
+                  <hr>
+                  If the steps above don't work, try
+                  <a href="#" id="read-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText" aria-expanded="false" aria-controls="collapseText">
+                    <span class="collapsed">these tips.</span>
+                    <span class="expanded">these tips.</span>
+                  </a>
+                  <div id="collapseText" class="collapse mt-3">
+                    <p>One of these usually does the trick:</p>
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Incognito Mode:</strong> Try opening the checkout link in a Private/Incognito window.</li>
+                      <li><strong>Disable Ad-Blockers:</strong> Sometimes privacy extensions (like uBlock or AdBlock) mistakenly block the payment script. Try pausing them for this site.</li>
+                      <li><strong>Try a Different Browser:</strong> Switching from Chrome to Firefox or Safari often bypasses local cache issues entirely.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-bottom">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent border-0 fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+                  How do I get support?
+                </button>
+              </h2>
+              <div id="collapse-13" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  You can contact us via email at <a href="mailto:contact@elasticons.com">contact@elasticons.com</a> or through the <a href="#" data-bs-target="#contactModal" data-bs-toggle="modal">contact form</a> on our website. We aim to respond to all inquiries within 48 hours on business days.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="contactModalContent">Contact Us</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Have questions, comments, or icon suggestions? Drop us an email using the form below or contact us via email at <a href="mailto:contact@elasticons.com">contact@elasticons.com</a>.</p>
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+            <p class="d-none">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label small">Email</label>
+              <input type="email" name="email" class="form-control py-2" id="emailInput" placeholder="your.email@address.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="subjectInput" class="form-label small">Subject</label>
+              <input type="text" name="subject" class="form-control py-2" id="subjectInput" placeholder="What's this regarding?" required>
+            </div>
+            <div class="mb-3">
+              <label for="messageTextarea" class="form-label small">Message</label>
+              <textarea id="messageTextarea" name="message" rows="1" class="form-control py-2 textarea" placeholder="Leave us a question, comment, or suggestion" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-outline-primary mt-2 py-2 w-100">
+              <span class="spinner-border spinner-border-sm visually-hidden" aria-hidden="true"></span>
+              <span class="btn-text" role="status">Send</span>
+            </button>
+            <!-- Contact Response -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+              <symbol id="formSuccess" viewBox="0 0 16 16">
+                <path d="M4.94446 7.88015L6.76668 10.209C6.76668 10.209 9.03924 7.65526 10.9074 5.55566M13.3178 2.84963C14.5563 4.17407 15.3148 5.95185 15.3148 7.90741C15.3148 11.9993 11.9993 15.3148 7.90741 15.3148C3.81556 15.3148 0.5 11.9993 0.5 7.90741C0.5 3.81556 3.81556 0.5 7.90741 0.5C10.0437 0.5 11.9667 1.4037 13.3178 2.84963Z"/>
+              </symbol>
+              <symbol id="formFail" viewBox="0 0 16 16">
+                <path d="M8 6.0454V8.69694M8 11.3485H8.0067M6.85433 2.63819L1.17957 12.0114C1.06257 12.2118 1.00066 12.4391 1.00001 12.6706C0.99935 12.9021 1.05997 13.1297 1.17583 13.3308C1.2917 13.532 1.45877 13.6995 1.66042 13.8169C1.86207 13.9343 2.09128 13.9975 2.32524 14H13.6748C13.9087 13.9975 14.1379 13.9343 14.3396 13.8169C14.5412 13.6995 14.7083 13.532 14.8242 13.3308C14.94 13.1297 15.0007 12.9021 15 12.6706C14.9993 12.4391 14.9374 12.2118 14.8204 12.0114L9.14567 2.63819C9.02623 2.44337 8.85806 2.2823 8.65738 2.17051C8.45671 2.05873 8.2303 2 8 2C7.7697 2 7.54329 2.05873 7.34262 2.17051C7.14194 2.2823 6.97377 2.44337 6.85433 2.63819Z"/>
+              </symbol>
+            </svg>
+            <div id="contactAlertWrapper" class="alert-wrapper">
+              <div class="overflow-hidden">
+                <div class="alert alert-primary d-flex align-items-center alert-dismissible fade show mb-0 mt-3" role="alert">
+                  <svg width="1rem" height="1rem" viewBox="0 0 16 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" class="me-2"><use href="#formSuccess"></use></svg>
+                  <span id="contactFormResponse"></span>
+                  <button type="button" class="btn-close" onclick="document.getElementById('contactAlertWrapper').classList.remove('alert-animation')" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5" id="loginModalContent">Login</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Log in to an existing premium account.
+            <br>
+            New to elasticons? <a href="#" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</a>.
+          </p>
+          <form id="auth-container">
+            <div class="mb-3">
+              <label for="auth-email" class="form-label small">Email</label>
+              <input type="email" id="auth-email" name="email" class="form-control py-2" placeholder="your.email@address.com" required>
+            </div>
+            <button type="submit" id="continue-btn" class="btn btn-outline-primary mt-2 py-2 w-100">
+              <span class="spinner-border spinner-border-sm visually-hidden" aria-hidden="true"></span>
+              <span class="continue-text" role="status">Continue</span>
+            </button>
+            <!-- Login Alert -->
+            <div id="loginAlertWrapper" class="alert-wrapper">
+              <div class="overflow-hidden">
+                <div class="alert alert-primary d-flex align-items-start alert-dismissible fade show mb-0 mt-3" role="alert">
+                  <span id="loginFormResponse"></span>
+                  <button type="button" class="btn-close" onclick="document.getElementById('loginAlertWrapper').classList.remove('alert-animation')" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+
+<!-- Lenis scroll -->
+<script src="./js/lenis.min.js"></script>
+<script>
+  // Initialize Lenis
+  // const lenis = new Lenis({ autoRaf: true });
+
+  // 1. Main page scroll instance (default)
+  const lenisPage = new Lenis();
+
+  // 2. Custom container scroll instance
+  const customContainer = document.querySelector('#category-filters');
+  const lenisContainer = new Lenis({
+    wrapper: customContainer,
+  });
+
+  // Animation loop to update all instances
+  function raf(time) {
+    lenisPage.raf(time);
+    lenisContainer.raf(time); // Update the custom container instance
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
+<!-- Modals -->
+<script>
+  // Fix accessibility conflict - remove any modal focus elements before closing
+  document.querySelectorAll('.modal').forEach((modal) => {
+    modal.addEventListener('hide.bs.modal', () => {
+      if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+        // AND remove the alert animation class from the contact form if it's still there
+        document.querySelectorAll('.alert-wrapper').forEach((wrapper) => {
+          wrapper.classList.remove('alert-animation');
+        });
+      }
+    });
+  });
+</script>
+<!-- Contact Form -->
+<script>
+  // Textarea Expand with Text (Form)
+  const textareaEle = document.getElementById('messageTextarea');
+  textareaEle.addEventListener('input', () => {
+    textareaEle.value = textareaEle.value.replace(/^\s/g,'');
+    textareaEle.style.height = 'auto';
+    textareaEle.style.height = `${textareaEle.scrollHeight + 2}px`;
+  });
+</script>
+<script src="./js/contact-form.js"></script>
+</html>
