@@ -16,10 +16,16 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   btnSpinner.classList.remove('visually-hidden');
   alertWrapper.classList.remove('alert-animation'); // Reset animation class
 
-  fetch('/', {
+  fetch('https://vrfhbulqufibjfopxvyn.supabase.co/functions/v1/contact-handler', {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
+    headers: { 
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message')
+    }),
   })
   .then((response) => {
     if (response.ok) {
