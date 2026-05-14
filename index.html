@@ -942,14 +942,5 @@
   });
 </script>
 <!-- Contact Form -->
-<script>
-  // Textarea Expand with Text (Form)
-  const textareaEle = document.getElementById('messageTextarea');
-  textareaEle.addEventListener('input', () => {
-    textareaEle.value = textareaEle.value.replace(/^\s/g,'');
-    textareaEle.style.height = 'auto';
-    textareaEle.style.height = `${textareaEle.scrollHeight + 2}px`;
-  });
-</script>
 <script src="./js/contact-form.js"></script>
 </html>

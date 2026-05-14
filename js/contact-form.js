@@ -1,3 +1,13 @@
+// Textarea Expand with Text
+const textareaEle = document.getElementById('messageTextarea');
+
+textareaEle.addEventListener('input', () => {
+  textareaEle.value = textareaEle.value.replace(/^\s/g,'');
+  textareaEle.style.height = 'auto';
+  textareaEle.style.height = `${textareaEle.scrollHeight + 2}px`;
+});
+
+// Submit the form
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   
@@ -9,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const btnSpinner = btn.querySelector('.spinner-border');
   const btnText = btn.querySelector('.btn-text');
   const formData = new FormData(this);
-
+  
   // Reset UI state
   btn.disabled = true;
   btnText.classList.add('visually-hidden');
@@ -35,6 +45,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
       iconUse.setAttribute('href', '#formSuccess');
       responseSpan.innerText = 'Message sent! We will get back to you soon.';
       this.reset();
+      textareaEle.style.height = 'auto';
     } else {
       throw new Error('Form submission failed');
     }
