@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
   fetch('https://vrfhbulqufibjfopxvyn.supabase.co/functions/v1/contact-handler', {
     method: "POST",
-    headers: { 
+    headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
