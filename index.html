@@ -75,6 +75,15 @@
       <div class="d-flex align-items-center pe-3">
         <!-- Login / Logout -->
         <div id="login-btn" class="btn btn-custom border-0 rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">Login</div>
+        <!-- Promo -->
+        <div data-bs-toggle="modal" data-bs-target="#promoModal">
+          <span class="btn btn-custom border-0 rounded-circle p-2 d-flex" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="See how it works">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="1" width="14" height="14" rx="4"/>
+              <path d="M6.26953 4.7998L11.0695 7.9998L6.26953 11.1998V4.7998Z"/>
+            </svg>
+          </span>
+        </div>
         <!-- Container layout icons -->
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
           <symbol id="condense" viewBox="0 0 23 18">
@@ -287,6 +296,32 @@
           <span id="toast-icon-name" class="me-1"></span> downloaded.
         </div>
         <button type="button" class="btn-close my-auto mx-3" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Modal -->
+  <div class="promo-modal modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalContent" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="d-flex p-3 position-absolute top-0 end-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-header flex-column justify-content-center border-0 p-4 pt-5">
+          <div class="modal-title fs-2" id="promoModalContent">How it works</div>
+          <p class="text-body-secondary text-center mb-0">Here's a quick video to show off the power of elasticons</p>
+        </div>
+        <div class="modal-body p-4">
+          <!-- YouTube video -->
+           <div class="ratio ratio-16x9 border rounded-3 overflow-hidden">
+             <iframe src="https://www.youtube.com/embed/EEPrs4USTus?si=zdOSy2HcXxFSggJJ" title="Animated SVG Icons for Modern UI Design | elasticons" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+           <!-- Promo CTA -->
+          <div id="promo-cta" class="d-flex align-items-center text-primary-emphasis bg-primary-subtle border-start border-4 border-primary-subtle p-3 mt-4">
+            Save thousands of hours on animation by accessing the full icon collection.
+            <button class="btn btn-primary rounded-2 ms-auto" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -873,7 +908,7 @@
           <p>
             Log in to an existing premium account.
             <br>
-            New to elasticons? <a href="#" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</a>.
+            New to elasticons? <a href="#" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</a>
           </p>
           <form id="auth-container">
             <div class="mb-3">

@@ -77,6 +77,9 @@ textarea {
 /* Make all tooltips fully opaque */
 .tooltip {
   --bs-tooltip-opacity: 1;
+  .tooltip-arrow {
+    display: none !important; // Removee the "tip" (the small arrow or triangle)
+  }
 }
 
 .btn-custom {
