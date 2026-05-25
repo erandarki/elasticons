@@ -3,24 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const STORAGE_LAYOUT = 'layout-style';
 
   /* -------------------------------------------------------------------------- */
-  /* Favicon Logic (Strictly OS-based for contrast)                             */
-  /* -------------------------------------------------------------------------- */
-  const updateFavicon = (e) => {
-    const isSystemDark = e.matches;
-    const favicon = document.getElementById('favicon');
-    if (favicon) {
-      // If OS is dark, use light icon. If OS is light, use dark icon.
-      favicon.href = isSystemDark ? './img/favicon-light.svg' : './img/favicon-dark.svg';
-    } 
-  };
-
-  const systemMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  // Initialize favicon
-  updateFavicon(systemMediaQuery);
-  // Listen for OS changes
-  systemMediaQuery.addEventListener('change', updateFavicon);
-
-  /* -------------------------------------------------------------------------- */
   /* Theme Logic                                                                */
   /* -------------------------------------------------------------------------- */
   const themeInput = document.getElementById('bs-theme');
