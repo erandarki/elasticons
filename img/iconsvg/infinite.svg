@@ -1,5 +1,0 @@
-<svg id="infinite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-<style><![CDATA[
-#infinite{pointer-events: all}#infinite #infinite-u-infinite {animation: infinite-u-infinite_s_do 1000ms linear infinite normal backwards}@keyframes infinite-u-infinite_s_do { 0% {stroke-dashoffset: 53} 100% {stroke-dashoffset: 109}}
-]]></style>
-<path id="infinite-u-infinite" d="M11.5,5.695c1.07,1.46058,2.956667,4.174992,5.806667,4.195C19.623333,9.89,21.5,8.012587,21.5,5.695s-1.876667-4.195-4.193333-4.195C14.456667,1.520008,12.57,4.231085,11.5,5.695C10.43,7.15558,8.543333,9.869992,5.693333,9.89C3.376667,9.89,1.5,8.012587,1.5,5.695s1.876667-4.195,4.193333-4.195C8.543333,1.520008,10.43,4.231085,11.5,5.695Z" transform="matrix(-1 0 0 1 23.5 6.305)" fill="none" stroke-dashoffset="53" stroke-dasharray="50,6"/></svg>
