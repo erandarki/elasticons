@@ -2,7 +2,8 @@
   "AI": [
     "sparks",
     "binary-code",
-    "code-flip"
+    "code-flip",
+    "sound-wave"
   ],
   "Arrows": [
     "download",
@@ -96,7 +97,8 @@
     "happy-sad",
     "refresh",
     "confetti",
-    "carousel-slider"
+    "carousel-slider",
+    "sound-wave"
   ],
   "Medical": [
     "headache"
@@ -110,7 +112,8 @@
     "happy-sad",
     "refresh",
     "group-bounce",
-    "user-bounce"
+    "user-bounce",
+    "sound-wave"
   ],
   "Animals": [
     "dog-love",

@@ -118,6 +118,22 @@ textarea {
   transform: scale(0.7);
 }
 
+#login-btn {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10%;
+    bottom: 0;
+    margin: auto;
+    width: var(--bs-border-width);
+    height: 1em;
+    background-color: $color-primary;
+    opacity: .25;
+  }
+}
+
 .dropdown-menu {
   z-index: 1040;
   background-color: $bg-color-primary;
@@ -291,7 +307,7 @@ main {
 
   #icon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     .icon-wrapper {
       display: flex;
       flex-wrap: wrap;
