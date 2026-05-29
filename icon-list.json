@@ -56,7 +56,9 @@
   "Science": [
     "head-gears",
     "brain-gear",
-    "atom"
+    "atom",
+    "test-tube",
+    "circles-flow"
   ],
   "Home": [
     "shower-head",
@@ -101,7 +103,8 @@
     "sound-wave"
   ],
   "Medical": [
-    "headache"
+    "headache",
+    "test-tube"
   ],
   "Multimedia": [
     "happy-sad-masks",
