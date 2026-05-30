@@ -116,7 +116,8 @@
     "refresh",
     "group-bounce",
     "user-bounce",
-    "sound-wave"
+    "sound-wave",
+    "hand-waving"
   ],
   "Animals": [
     "dog-love",
@@ -136,7 +137,8 @@
     "happy-sad",
     "group-bounce",
     "user-bounce",
-    "link"
+    "link",
+    "hand-waving"
   ],
   "Weather": [
     "sunny-rainy",
