@@ -3,7 +3,9 @@
     "sparks",
     "binary-code",
     "code-flip",
-    "sound-wave"
+    "sound-wave-beat",
+    "sound-wave-ripple",
+    "bot-bounce"
   ],
   "Arrows": [
     "download",
@@ -25,7 +27,7 @@
   "Connectivity": [
     "bluetooth",
     "globe-team",
-    "globe",
+    "globe-spin",
     "antenna",
     "touch-id",
     "binary-code",
@@ -72,7 +74,7 @@
     "menu-close",
     "approve",
     "deny",
-    "globe",
+    "globe-spin",
     "cloud-download",
     "cloud-upload",
     "bell",
@@ -100,7 +102,7 @@
     "refresh",
     "confetti",
     "carousel-slider",
-    "sound-wave"
+    "sound-wave-beat"
   ],
   "Medical": [
     "headache",
@@ -116,7 +118,7 @@
     "refresh",
     "group-bounce",
     "user-bounce",
-    "sound-wave",
+    "sound-wave-beat",
     "hand-waving"
   ],
   "Animals": [
