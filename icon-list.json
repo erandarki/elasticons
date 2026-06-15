@@ -1,5 +1,6 @@
 {
   "AI": [
+    "dual-spark",
     "sparks",
     "binary-code",
     "code-flip",
@@ -38,7 +39,11 @@
     "network-connection",
     "log-out",
     "log-in",
-    "link"
+    "link",
+    "brain-gear",
+    "circles-flow",
+    "up-down-arrows",
+    "code-flip"
   ],
   "Fitness": [
     "woman-figure",
@@ -82,6 +87,7 @@
     "refresh",
     "confetti",
     "control-horizontal",
+    "dual-control-horizontal",
     "slider-vertical",
     "envelope-bounce",
     "globe-bounce",
@@ -95,6 +101,7 @@
   "Gaming": [
     "maze",
     "star-spark",
+    "dual-spark",
     "sparks",
     "happy-sad-masks",
     "hourglass",
