@@ -155,6 +155,10 @@
       </svg>
     </div>
     <p class="text-center px-3">Bring your UI to life with premium animated SVG icons</p>
+    <div id="goPremiumBtn" class="d-grid gap-3 d-flex justify-content-center mt-4">
+      <button class="btn btn-primary rounded-3 py-2 px-3 fw-medium" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
+      <button class="btn btn-outline-primary rounded-3 py-2 px-3 fw-medium" data-bs-toggle="modal" data-bs-target="#promoModal">See how it works</button>
+    </div>
   </header>
 
   <main class="container-fluid flex-grow-1">
@@ -164,11 +168,7 @@
         <div class="form">
           <div class="d-flex align-items-start justify-content-between" style="height: 42px;">
             <h5>Customize</h5>
-            <button id="reset-btn" class="d-none btn btn-sm btn-custom rounded-2" disabled>Reset</button>
-            <!-- Go premium button -->
-            <span id="goPremiumBtn" class="d-none" data-bs-toggle="modal" data-bs-target="#pricesModal">
-              <button id="premium-btn" class="btn btn-sm btn-outline-primary rounded-2" data-bs-toggle="tooltip" data-bs-title="Unlock customization and download features.">Go Premium</button>
-            </span>
+            <button id="reset-btn" class="btn btn-sm btn-custom rounded-2" disabled>Reset</button>
           </div>
           <div style="margin-top: -1rem;">
             <!-- Animate on -->
@@ -321,7 +321,7 @@
            <!-- Promo CTA -->
           <div id="promo-cta" class="d-flex align-items-center text-primary-emphasis bg-primary-subtle border-start border-4 border-primary-subtle p-3 mt-4">
             Save thousands of hours on animation by accessing the full premium collection.
-            <button class="btn btn-primary rounded-2 ms-auto" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
+            <button class="btn btn-primary rounded-2 ms-auto fw-medium" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
           </div>
         </div>
       </div>
