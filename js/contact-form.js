@@ -19,13 +19,29 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const btnSpinner = btn.querySelector('.spinner-border');
   const btnText = btn.querySelector('.btn-text');
   const formData = new FormData(this);
+
+  // 1. HONEYPOT CHECK: If the bot-field contains anything, it's a bot!
+  if (formData.get('confirm-entry')) {
+    console.warn('Spambot execution blocked.');
+    
+    // Fail silently or pretend it worked so the bot doesn't try harder
+    this.reset();
+    textareaEle.style.height = 'auto';
+    
+    // Reset button UI state back to normal
+    btn.disabled = false;
+    btnText.classList.remove('visually-hidden');
+    btnSpinner.classList.add('visually-hidden');
+    return; // <--- CRITICAL: Stops the code right here so no email is sent
+  }
   
-  // Reset UI state
+  // Reset UI state for real users
   btn.disabled = true;
   btnText.classList.add('visually-hidden');
   btnSpinner.classList.remove('visually-hidden');
-  alertWrapper.classList.remove('alert-animation'); // Reset animation class
+  alertWrapper.classList.remove('alert-animation');
 
+  // 2. Proceed with normal sending for humans
   fetch('https://vrfhbulqufibjfopxvyn.supabase.co/functions/v1/contact-handler', {
     method: "POST",
     headers: {
@@ -39,7 +55,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   })
   .then((response) => {
     if (response.ok) {
-      // Success State
       alertWrapper.classList.add('alert-animation');
       alertBox.classList.replace('alert-danger', 'alert-primary');
       iconUse.setAttribute('href', '#formSuccess');
@@ -51,7 +66,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
   })
   .catch((error) => {
-    // Error State
     alertBox.classList.replace('alert-primary', 'alert-danger');
     alertWrapper.classList.add('alert-animation');
     iconUse.setAttribute('href', '#formFail');
@@ -61,7 +75,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     btn.disabled = false;
     btnSpinner.classList.add('visually-hidden');
     btnText.classList.remove('visually-hidden');
-    // Scroll to the bottom of the form to show the alert (with small delay to ensure it has rendered)
     setTimeout(() => {
       alertWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 300);
