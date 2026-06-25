@@ -127,7 +127,9 @@
     "user-bounce",
     "sound-wave-beat",
     "hand-waving",
-    "language-scale"
+    "language-scale",
+    "image",
+    "images"
   ],
   "Animals": [
     "dog-love",
@@ -159,6 +161,9 @@
   "Content": [
     "pencil-draw",
     "slider-vertical",
-    "checklist"
+    "checklist",
+    "paperclip",
+    "image",
+    "images"
   ]
 }
