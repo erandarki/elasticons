@@ -129,7 +129,8 @@
     "hand-waving",
     "language-scale",
     "image",
-    "images"
+    "images",
+    "camera"
   ],
   "Animals": [
     "dog-love",
@@ -137,7 +138,8 @@
   ],
   "Devices": [
     "shredder",
-    "printer"
+    "printer",
+    "camera"
   ],
   "Food & Drink": [
     "coffee-love",
