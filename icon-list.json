@@ -19,7 +19,11 @@
     "up-down-arrows",
     "code-flip",
     "log-out",
-    "log-in"
+    "log-in",
+    "arrow-up",
+    "arrow-down",
+    "arrow-right",
+    "arrow-left"
   ],
   "Analytics": [
     "bar-chart",
@@ -43,7 +47,8 @@
     "brain-gear",
     "circles-flow",
     "up-down-arrows",
-    "code-flip"
+    "code-flip",
+    "mic"
   ],
   "Fitness": [
     "woman-figure",
@@ -130,7 +135,8 @@
     "language-scale",
     "image",
     "images",
-    "camera"
+    "camera",
+    "mic"
   ],
   "Animals": [
     "dog-love",
@@ -139,7 +145,8 @@
   "Devices": [
     "shredder",
     "printer",
-    "camera"
+    "camera",
+    "mic"
   ],
   "Food & Drink": [
     "coffee-love",
