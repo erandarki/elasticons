@@ -101,7 +101,8 @@
     "user-bounce",
     "log-out",
     "log-in",
-    "checklist"
+    "checklist",
+    "gear"
   ],
   "Gaming": [
     "maze",
@@ -146,7 +147,8 @@
     "shredder",
     "printer",
     "camera",
-    "mic"
+    "mic",
+    "cpu"
   ],
   "Food & Drink": [
     "coffee-love",
