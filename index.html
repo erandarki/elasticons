@@ -319,10 +319,18 @@
           <p class="text-body-secondary text-center mb-0">Here's a quick video to show off the power of elasticons</p>
         </div>
         <div class="modal-body p-4">
-          <!-- YouTube video (&vq=hd1080 -> Force max resolution, &rel=0 -> Disable related videos) -->
-           <div class="ratio ratio-16x9 border rounded-3 overflow-hidden">
-             <iframe src="https://www.youtube.com/embed/EEPrs4USTus?si=zdOSy2HcXxFSggJJ&vq=hd1080&rel=0" title="Animated SVG Icons for Modern UI Design | elasticons" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-           </div>
+          <!-- YouTube video -->
+           <div class="ratio ratio-16x9 border rounded-3 overflow-hidden position-relative" id="promo-video-container" style="cursor: pointer;">
+  
+            <img src="https://img.youtube.com/vi/EEPrs4USTus/maxresdefault.jpg" alt="Animated SVG Icons for Modern UI Design | elasticons" class="w-100 h-100 object-fit-cover">
+            
+            <div class="d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="68" height="48" viewBox="0 0 68 48">
+                <path fill="#FF0000" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/>
+                <path fill="#fff" d="M45 24L27 14v20z"/>
+              </svg>
+            </div>
+          </div>
            <!-- Promo CTA -->
           <div id="promo-cta" class="d-flex align-items-center text-primary-emphasis bg-primary-subtle border-start border-4 border-primary-subtle p-3 mt-4">
             Save thousands of hours on animation by accessing the full premium collection.
@@ -987,4 +995,20 @@
 </script>
 <!-- Contact Form -->
 <script src="./js/contact-form.js"></script>
+<script>
+  // YouTube video
+  const videoContainer = document.getElementById('promo-video-container');
+
+  if (videoContainer) {
+    videoContainer.addEventListener('click', function() {
+      this.innerHTML = `
+        <iframe src="https://www.youtube.com/embed/EEPrs4USTus?autoplay=1&si=zdOSy2HcXxFSggJJ&rel=0" 
+                title="Animated SVG Icons for Modern UI Design | elasticons" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+        </iframe>`;
+    });
+  }
+</script>
 </html>
