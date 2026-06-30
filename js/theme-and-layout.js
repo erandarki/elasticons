@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-bs-theme', theme);
     themeInput.checked = (theme === 'dark');
     themeIcon.setAttribute('href', theme === 'dark' ? '#light' : '#dark');
-    themeTooltip.setContent({ '.tooltip-inner': theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode' });
+    themeTooltip.setContent({ '.tooltip-inner': theme === 'dark' ? 'Switch to light' : 'Switch to dark' });
   };
 
   themeInput.addEventListener('change', () => {
