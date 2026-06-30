@@ -134,6 +134,42 @@ textarea {
   }
 }
 
+.play-promo-btn {
+  column-gap: 0.75rem;
+  // backdrop-filter: saturate(150%) blur(8px);
+  // background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px inset;
+  white-space: nowrap;
+  padding: 1.75rem;
+  transition: width 0.3s;
+  overflow: hidden;
+  border-radius: 999rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  backdrop-filter: saturate(150%) blur(8px);
+  background-color: rgba(0, 0, 0, 0.2);
+  .play-promo-icon {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+  }
+  .play-promo-text {
+    opacity: 0;
+    color: white;
+    transition: opacity 0.3s;
+  }
+  &:hover {
+    width: 19rem;
+    .play-promo-text {
+      opacity: 1;
+    }
+  }
+}
+
 .dropdown-menu {
   z-index: 1040;
   background-color: $bg-color-primary;

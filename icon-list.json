@@ -23,7 +23,9 @@
     "arrow-up",
     "arrow-down",
     "arrow-right",
-    "arrow-left"
+    "arrow-left",
+    "play-circle",
+    "play-square"
   ],
   "Analytics": [
     "bar-chart",
@@ -115,7 +117,9 @@
     "refresh",
     "confetti",
     "carousel-slider",
-    "sound-wave-beat"
+    "sound-wave-beat",
+    "play-circle",
+    "play-square"
   ],
   "Medical": [
     "headache",
@@ -137,7 +141,9 @@
     "image",
     "images",
     "camera",
-    "mic"
+    "mic",
+    "play-circle",
+    "play-square"
   ],
   "Animals": [
     "dog-love",

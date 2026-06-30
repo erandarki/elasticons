@@ -320,21 +320,21 @@
         </div>
         <div class="modal-body p-4">
           <!-- YouTube video -->
-           <div class="ratio ratio-16x9 border rounded-3 overflow-hidden position-relative" id="promo-video-container" style="cursor: pointer;">
+           <div class="ratio ratio-16x9 border rounded-3 overflow-hidden position-relative" id="promo-video-container">
   
             <img src="https://img.youtube.com/vi/EEPrs4USTus/maxresdefault.jpg" alt="Animated SVG Icons for Modern UI Design | elasticons" class="w-100 h-100 object-fit-cover">
             
-            <div class="d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="68" height="48" viewBox="0 0 68 48">
-                <path fill="#FF0000" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/>
-                <path fill="#fff" d="M45 24L27 14v20z"/>
+            <div class="play-promo-btn position-absolute top-50 start-50 translate-middle">
+              <svg class="play-promo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.09 5.00854L25.4202 14.3232C26.6335 15.1119 26.6335 16.8883 25.4202 17.677L11.09 26.9916C9.75947 27.8564 8 26.9016 8 25.3147V6.68542C8 5.09855 9.75947 4.14371 11.09 5.00854Z"/>
               </svg>
+              <div class="play-promo-text fw-medium">elasticons in 60 seconds</div>
             </div>
           </div>
            <!-- Promo CTA -->
           <div id="promo-cta" class="d-flex align-items-center text-primary-emphasis bg-primary-subtle border-start border-4 border-primary-subtle p-3 mt-4">
             Save thousands of hours on animation by accessing the full premium collection.
-            <button class="btn btn-primary rounded-2 ms-auto fw-medium" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
+            <button class="btn btn-primary rounded-2 ms-auto fw-medium flex-shrink-0" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium</button>
           </div>
         </div>
       </div>
