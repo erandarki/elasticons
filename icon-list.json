@@ -182,5 +182,11 @@
     "paperclip",
     "image",
     "images"
+  ],
+  "Navigation & Travel": [
+    "compass",
+    "globe-team",
+    "globe-spin",
+    "globe-bounce"
   ]
 }
