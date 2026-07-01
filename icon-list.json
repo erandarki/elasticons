@@ -16,7 +16,8 @@
     "cloud-upload",
     "refresh",
     "inbox-arrow-down",
-    "up-down-arrows",
+    "arrow-up-down",
+    "arrow-right-left",
     "code-flip",
     "log-out",
     "log-in",
@@ -48,7 +49,6 @@
     "link",
     "brain-gear",
     "circles-flow",
-    "up-down-arrows",
     "code-flip",
     "mic"
   ],
