@@ -55,7 +55,8 @@
   "Fitness": [
     "woman-figure",
     "bicycle",
-    "treadmill-workout"
+    "treadmill-workout",
+    "watch"
   ],
   "Nature": [
     "fire",
@@ -154,7 +155,9 @@
     "printer",
     "camera",
     "mic",
-    "cpu"
+    "cpu",
+    "clock",
+    "watch"
   ],
   "Food & Drink": [
     "coffee-love",
