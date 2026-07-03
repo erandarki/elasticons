@@ -26,7 +26,13 @@
     "arrow-right",
     "arrow-left",
     "play-circle",
-    "play-square"
+    "play-square",
+    "sidebar-close",
+    "sidebar-open",
+    "chevron-down",
+    "chevron-up",
+    "chevron-right",
+    "chevron-left"
   ],
   "Analytics": [
     "bar-chart",
