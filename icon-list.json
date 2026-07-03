@@ -197,5 +197,14 @@
     "globe-team",
     "globe-spin",
     "globe-bounce"
+  ],
+  "Design": [
+    "layout",
+    "carousel-slider",
+    "pencil-draw",
+    "slider-vertical",
+    "checklist",
+    "image",
+    "images"
   ]
 }
