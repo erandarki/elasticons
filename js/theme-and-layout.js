@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     layoutInput.checked = isFluid;
     layoutIcon.setAttribute('href', isFluid ? '#condense' : '#expand');
-    layoutTooltip.setContent({ '.tooltip-inner': isFluid ? 'Condense layout' : 'Expand layout' });
+    layoutTooltip.setContent({ '.tooltip-inner': isFluid ? 'Condense view' : 'Expand view' });
     
     // Remove the temporary head style if it exists
     const tempFix = document.getElementById('temp-layout-fix');
