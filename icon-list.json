@@ -200,6 +200,7 @@
   ],
   "Design": [
     "layout",
+    "grid",
     "carousel-slider",
     "slider-vertical",
     "pencil-draw",
