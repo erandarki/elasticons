@@ -7,13 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
   /* -------------------------------------------------------------------------- */
   const themeInput = document.getElementById('bs-theme');
   const themeLabel = document.querySelector('.color-switch-btn');
-  const themeIcon = themeLabel.querySelector('use');
+  const iconLight = document.querySelector('.icon-light');
+  const iconDark = document.querySelector('.icon-dark');
   const themeTooltip = new bootstrap.Tooltip(themeLabel);
 
   const updateThemeUI = (theme) => {
     document.documentElement.setAttribute('data-bs-theme', theme);
     themeInput.checked = (theme === 'dark');
-    themeIcon.setAttribute('href', theme === 'dark' ? '#light' : '#dark');
+    
+    // Toggle the d-none class to show the correct icon
+    if (theme === 'dark') {
+      iconDark.classList.add('d-none');
+      iconLight.classList.remove('d-none'); // Show Sun to switch back to light
+    } else {
+      iconLight.classList.add('d-none');
+      iconDark.classList.remove('d-none'); // Show Moon to switch back to dark
+    }
+
     themeTooltip.setContent({ '.tooltip-inner': theme === 'dark' ? 'Switch to light' : 'Switch to dark' });
   };
 
@@ -28,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* -------------------------------------------------------------------------- */
   const layoutInput = document.getElementById('container-layout');
   const layoutLabel = document.querySelector('.container-layout-btn');
-  const layoutIcon = layoutLabel.querySelector('use');
+  const iconCondense = document.querySelector('.icon-condense');
+  const iconExpand = document.querySelector('.icon-expand');
   const layoutTooltip = new bootstrap.Tooltip(layoutLabel);
 
   const updateLayoutUI = (isFluid) => {
@@ -42,7 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     layoutInput.checked = isFluid;
-    layoutIcon.setAttribute('href', isFluid ? '#condense' : '#expand');
+    
+    // Toggle the d-none class to show the correct icon
+    if (isFluid) {
+      // If layout is fluid, show the "condense" icon to allow switching back
+      iconExpand.classList.add('d-none');
+      if (iconCondense) iconCondense.classList.remove('d-none'); 
+    } else {
+      // If layout is fixed, show the "expand" icon to allow switching back
+      if (iconCondense) iconCondense.classList.add('d-none');
+      iconExpand.classList.remove('d-none'); 
+    }
+
     layoutTooltip.setContent({ '.tooltip-inner': isFluid ? 'Condense view' : 'Expand view' });
     
     // Remove the temporary head style if it exists
