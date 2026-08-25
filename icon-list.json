@@ -47,7 +47,7 @@
     { "name": "globe-bounce", "tags": ["world", "browser", "travel", "web", "internet", "language"] },
     { "name": "antenna", "tags": ["receiver", "signal", "reception", "aerial", "scan", "transmission", "satellite"] },
     { "name": "network-connection", "tags": ["integration", "devops", "automation", "node", "ci"] },
-    { "name": "touch-id", "tags": ["security", "biometric", "2fa", "authentication", "identity"] },
+    { "name": "touch-id", "tags": ["security", "biometric", "2fa", "authentication", "identity", "fingerprint"] },
     { "name": "hourglass", "tags": ["time", "timer", "waiting", "loading", "sandglass"] },
     { "name": "confetti", "tags": ["celebration", "party", "congratulations", "tada", "excitement"] },
     { "name": "link", "tags": ["chain", "url", "share"] },
