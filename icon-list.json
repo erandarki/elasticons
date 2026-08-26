@@ -214,5 +214,22 @@
     { "name": "checklist" },
     { "name": "image" },
     { "name": "images" }
+  ],
+  "Loaders": [
+    { "name": "ellipsis", "tags": ["et cetera", "etc", "loader", "loading", "progress", "pending", "throbber", "menu", "options", "operator", "spread", "rest", "more", "further", "extra", "overflow", "dots", "…"] },
+    { "name": "infinite-loop" },
+    { "name": "antenna" },
+    { "name": "binary-code" },
+    { "name": "brain-gear" },
+    { "name": "hourglass" },
+    { "name": "refresh" },
+    { "name": "clock" },
+    { "name": "watch" },
+    { "name": "bicycle" },
+    { "name": "circles-flow" },
+    { "name": "globe-spin" },
+    { "name": "globe-team" },
+    { "name": "head-gears" },
+    { "name": "recycle" }
   ]
 }
