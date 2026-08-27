@@ -183,7 +183,8 @@
     { "name": "group-bounce" },
     { "name": "user-bounce" },
     { "name": "link" },
-    { "name": "hand-waving" }
+    { "name": "hand-waving" },
+    { "name": "chat-dots", "tags": ["comment", "message", "conversation", "dialog", "feedback", "speech bubble", "typing", "writing", "responding", "ellipsis", "etc", "et cetera", "..."] }
   ],
   "Weather": [
     { "name": "sunny-rainy" },
@@ -203,7 +204,8 @@
     { "name": "compass", "tags": ["direction", "north", "east", "south", "west", "map", "safari", "browser"] },
     { "name": "globe-team" },
     { "name": "globe-spin" },
-    { "name": "globe-bounce" }
+    { "name": "globe-bounce" },
+    { "name": "store", "tags": ["shop", "supermarket", "stand", "boutique", "building"] }
   ],
   "Design": [
     { "name": "layout", "tags": ["window", "webpage", "block", "section", "template", "grid", "structure", "panel"] },
@@ -216,7 +218,7 @@
     { "name": "images" }
   ],
   "Loaders": [
-    { "name": "ellipsis", "tags": ["et cetera", "etc", "loader", "loading", "progress", "pending", "throbber", "menu", "options", "operator", "spread", "rest", "more", "further", "extra", "overflow", "dots", "…"] },
+    { "name": "ellipsis", "tags": ["et cetera", "etc", "loader", "loading", "progress", "pending", "throbber", "menu", "options", "operator", "spread", "rest", "more", "further", "extra", "overflow", "dots", "..."] },
     { "name": "infinite-loop" },
     { "name": "antenna" },
     { "name": "binary-code" },
@@ -231,5 +233,13 @@
     { "name": "globe-team" },
     { "name": "head-gears" },
     { "name": "recycle" }
+  ],
+  "Files & Folders": [
+    { "name": "folder", "tags": ["directory", "storage", "document"] },
+    { "name": "printer" },
+    { "name": "shredder" },
+    { "name": "paperclip" },
+    { "name": "image" },
+    { "name": "images" }
   ]
 }
