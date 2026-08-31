@@ -125,7 +125,8 @@
     { "name": "happy-sad", "tags": ["drama", "smiley", "react", "reaction", "emoji"] },
     { "name": "carousel-slider", "tags": ["pictures", "carousel", "gallery", "scroll", "swipe", "album", "portfolio"] },
     { "name": "crown", "tags": ["diadem", "tiara", "circlet", "corona", "king", "ruler", "winner", "favourite", "royalty"] },
-    { "name": "plus", "tags": ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "maximum", "upgrade", "extra", "+"]},
+    { "name": "plus", "tags": ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "maximum", "upgrade", "extra", "+"] },
+    { "name": "heart", "tags": ["like", "love", "emotion", "suit", "playing", "cards"] },
     { "name": "star-spark" },
     { "name": "dual-spark" },
     { "name": "sparks" },
@@ -138,7 +139,8 @@
   ],
   "Medical": [
     { "name": "headache", "tags": ["medical", "mind", "mental", "pain", "cerebral", "think", "thought", "insight"] },
-    { "name": "test-tube" }
+    { "name": "test-tube" },
+    { "name": "heart" }
   ],
   "Multimedia": [
     { "name": "infinite-loop", "tags": ["unlimited", "forever", "math"] },
@@ -160,7 +162,8 @@
     { "name": "sound-wave-beat" },
     { "name": "mic" },
     { "name": "play-circle" },
-    { "name": "play-square" }
+    { "name": "play-square" },
+    { "name": "heart" }
   ],
   "Animals": [
     { "name": "dog-love", "tags": ["pet", "puppy", "canine"] },
@@ -182,6 +185,7 @@
   "Social": [
     { "name": "love-letter", "tags": ["like", "emotion", "feedback", "positive", "interest", "valentine", "dating", "date", "romance", "personal", "crush", "secret", "writing", "reading", "favorite"] },
     { "name": "chat-dots", "tags": ["comment", "message", "conversation", "dialog", "feedback", "speech bubble", "typing", "writing", "responding", "ellipsis", "etc", "et cetera", "..."] },
+    { "name": "heart" },
     { "name": "heartbreak" },
     { "name": "happy-sad" },
     { "name": "group-bounce" },
