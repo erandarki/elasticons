@@ -126,7 +126,7 @@
     { "name": "carousel-slider", "tags": ["pictures", "carousel", "gallery", "scroll", "swipe", "album", "portfolio"] },
     { "name": "crown", "tags": ["diadem", "tiara", "circlet", "corona", "king", "ruler", "winner", "favourite", "royalty"] },
     { "name": "plus", "tags": ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "maximum", "upgrade", "extra", "+"] },
-    { "name": "heart", "tags": ["like", "love", "emotion", "suit", "playing", "cards"] },
+    { "name": "heart", "tags": ["like", "love", "emotion", "suit"] },
     { "name": "star-spark" },
     { "name": "dual-spark" },
     { "name": "sparks" },
