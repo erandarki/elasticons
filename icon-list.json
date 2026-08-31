@@ -125,6 +125,7 @@
     { "name": "happy-sad", "tags": ["drama", "smiley", "react", "reaction", "emoji"] },
     { "name": "carousel-slider", "tags": ["pictures", "carousel", "gallery", "scroll", "swipe", "album", "portfolio"] },
     { "name": "crown", "tags": ["diadem", "tiara", "circlet", "corona", "king", "ruler", "winner", "favourite", "royalty"] },
+    { "name": "plus", "tags": ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "maximum", "upgrade", "extra", "+"]},
     { "name": "star-spark" },
     { "name": "dual-spark" },
     { "name": "sparks" },
@@ -148,7 +149,9 @@
     { "name": "language-scale", "tags": ["translate"] },
     { "name": "image", "tags": ["content", "picture", "photo", "gallery"] },
     { "name": "images", "tags": ["content", "picture", "photo", "gallery"] },
+    { "name": "image-video", "tags": ["content", "picture", "photo", "gallery", "video", "media"] },
     { "name": "camera", "tags": ["photography", "lens", "focus", "capture", "shot", "visual", "image", "photo", "webcam"] },
+    { "name": "library", "tags": ["books", "reading", "written", "authors", "stories", "fiction", "novels", "information", "knowledge", "education", "high school", "university", "college", "academy", "learning", "study", "research", "collection", "vinyl", "records", "albums", "music", "package"] },
     { "name": "happy-sad-masks" },
     { "name": "binary-code" },
     { "name": "happy-sad" },
@@ -178,13 +181,13 @@
   ],
   "Social": [
     { "name": "love-letter", "tags": ["like", "emotion", "feedback", "positive", "interest", "valentine", "dating", "date", "romance", "personal", "crush", "secret", "writing", "reading", "favorite"] },
+    { "name": "chat-dots", "tags": ["comment", "message", "conversation", "dialog", "feedback", "speech bubble", "typing", "writing", "responding", "ellipsis", "etc", "et cetera", "..."] },
     { "name": "heartbreak" },
     { "name": "happy-sad" },
     { "name": "group-bounce" },
     { "name": "user-bounce" },
     { "name": "link" },
-    { "name": "hand-waving" },
-    { "name": "chat-dots", "tags": ["comment", "message", "conversation", "dialog", "feedback", "speech bubble", "typing", "writing", "responding", "ellipsis", "etc", "et cetera", "..."] }
+    { "name": "hand-waving" }
   ],
   "Weather": [
     { "name": "sunny-rainy" },
@@ -195,17 +198,20 @@
   "Content": [
     { "name": "pencil-draw", "tags": ["edit", "change", "create", "draw", "writer", "writing", "ink", "marker", "artist", "design"] },
     { "name": "paperclip", "tags": ["attachment", "file"] },
+    { "name": "search", "tags": ["find", "scan", "magnifier", "magnifying glass", "lens", "locate", "explore", "discover", "enlarge", "zoom"] },
     { "name": "slider-vertical" },
     { "name": "checklist" },
     { "name": "image" },
-    { "name": "images" }
+    { "name": "images" },
+    { "name": "image-video" },
+    { "name": "library" }
   ],
   "Navigation & Travel": [
     { "name": "compass", "tags": ["direction", "north", "east", "south", "west", "map", "safari", "browser"] },
+    { "name": "store", "tags": ["shop", "supermarket", "stand", "boutique", "building"] },
     { "name": "globe-team" },
     { "name": "globe-spin" },
-    { "name": "globe-bounce" },
-    { "name": "store", "tags": ["shop", "supermarket", "stand", "boutique", "building"] }
+    { "name": "globe-bounce" }
   ],
   "Design": [
     { "name": "layout", "tags": ["window", "webpage", "block", "section", "template", "grid", "structure", "panel"] },
@@ -215,7 +221,8 @@
     { "name": "pencil-draw" },
     { "name": "checklist" },
     { "name": "image" },
-    { "name": "images" }
+    { "name": "images" },
+    { "name": "image-video" }
   ],
   "Loaders": [
     { "name": "ellipsis", "tags": ["et cetera", "etc", "loader", "loading", "progress", "pending", "throbber", "menu", "options", "operator", "spread", "rest", "more", "further", "extra", "overflow", "dots", "..."] },
@@ -240,6 +247,7 @@
     { "name": "shredder" },
     { "name": "paperclip" },
     { "name": "image" },
-    { "name": "images" }
+    { "name": "images" },
+    { "name": "image-video" }
   ]
 }
