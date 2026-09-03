@@ -80,8 +80,10 @@
     { "name": "head-gears", "tags": ["cogs", "think", "gears", "analyze"] },
     { "name": "atom", "tags": ["nuclear", "physics", "particle", "molecule", "energy", "chemistry"] },
     { "name": "test-tube", "tags": ["vial", "phial", "flask", "ampoule", "ampule", "lab", "chemistry", "experiment"] },
+    { "name": "telescope", "tags": ["astronomy", "space", "discovery", "exploration", "explore", "vision", "perspective", "focus", "stargazing", "observe", "view"] },
     { "name": "brain-gear" },
-    { "name": "circles-flow" }
+    { "name": "circles-flow" },
+    { "name": "headache" }
   ],
   "Home": [
     { "name": "shower-head", "tags": ["bath", "bathroom", "amenities", "services"] },
@@ -248,11 +250,18 @@
   ],
   "Files & Folders": [
     { "name": "folder", "tags": ["directory", "storage", "document"] },
+    { "name": "archive", "tags": ["index", "backup", "box", "storage", "records"] },
     { "name": "printer" },
     { "name": "shredder" },
     { "name": "paperclip" },
     { "name": "image" },
     { "name": "images" },
     { "name": "image-video" }
+  ],
+  "Education": [
+    { "name": "graduation-cap", "tags": ["school", "university", "learn", "study", "mortarboard", "education", "ceremony", "academic", "hat", "diploma", "bachlor's", "master's", "doctorate"] },
+    { "name": "library" },
+    { "name": "binary-code" },
+    { "name": "language-scale" }
   ]
 }
