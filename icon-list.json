@@ -127,6 +127,7 @@
     { "name": "crown", "tags": ["diadem", "tiara", "circlet", "corona", "king", "ruler", "winner", "favourite", "royalty"] },
     { "name": "plus", "tags": ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "maximum", "upgrade", "extra", "+"] },
     { "name": "heart", "tags": ["like", "love", "emotion", "suit"] },
+    { "name": "diamond", "tags": ["crystal", "ruby", "jewellery", "price", "special", "present", "gift", "ring", "wedding", "proposal", "marriage", "gem"] },
     { "name": "star-spark" },
     { "name": "dual-spark" },
     { "name": "sparks" },
