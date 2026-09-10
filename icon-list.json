@@ -157,6 +157,7 @@
     { "name": "image-video", "tags": ["content", "picture", "photo", "gallery", "video", "media"] },
     { "name": "camera", "tags": ["photography", "lens", "focus", "capture", "shot", "visual", "image", "photo", "webcam"] },
     { "name": "library", "tags": ["books", "reading", "written", "authors", "stories", "fiction", "novels", "information", "knowledge", "education", "high school", "university", "college", "academy", "learning", "study", "research", "collection", "vinyl", "records", "albums", "music", "package"] },
+    { "name": "megaphone", "tags": ["advertisement", "announcement", "attention", "alert", "loudspeaker", "action", "notification"] },
     { "name": "happy-sad-masks" },
     { "name": "binary-code" },
     { "name": "happy-sad" },
