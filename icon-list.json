@@ -108,6 +108,7 @@
     { "name": "lock-shake", "tags": ["security", "password", "secure", "admin"] },
     { "name": "user-bounce", "tags": ["social", "profile", "account", "person", "contact"] },
     { "name": "gear", "tags": ["settings", "cog", "edit", "preferences"] },
+    { "name": "webhook", "tags": ["push api", "interface", "callback", "development"] },
     { "name": "menu-arrow" },
     { "name": "globe-spin" },
     { "name": "cloud-download" },
@@ -158,6 +159,7 @@
     { "name": "camera", "tags": ["photography", "lens", "focus", "capture", "shot", "visual", "image", "photo", "webcam"] },
     { "name": "library", "tags": ["books", "reading", "written", "authors", "stories", "fiction", "novels", "information", "knowledge", "education", "high school", "university", "college", "academy", "learning", "study", "research", "collection", "vinyl", "records", "albums", "music", "package"] },
     { "name": "megaphone", "tags": ["advertisement", "announcement", "attention", "alert", "loudspeaker", "action", "notification"] },
+    { "name": "radio", "tags": ["signal", "broadcast", "connectivity", "live", "frequency"] },
     { "name": "happy-sad-masks" },
     { "name": "binary-code" },
     { "name": "happy-sad" },
@@ -180,7 +182,8 @@
     { "name": "printer" },
     { "name": "camera" },
     { "name": "mic" },
-    { "name": "watch" }
+    { "name": "watch" },
+    { "name": "radio" }
   ],
   "Food & Drink": [
     { "name": "coffee-love", "tags": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"] },
@@ -189,13 +192,15 @@
   "Social": [
     { "name": "love-letter", "tags": ["like", "emotion", "feedback", "positive", "interest", "valentine", "dating", "date", "romance", "personal", "crush", "secret", "writing", "reading", "favorite"] },
     { "name": "chat-dots", "tags": ["comment", "message", "conversation", "dialog", "feedback", "speech bubble", "typing", "writing", "responding", "ellipsis", "etc", "et cetera", "..."] },
+    { "name": "webhook" },
     { "name": "heart" },
     { "name": "heartbreak" },
     { "name": "happy-sad" },
     { "name": "group-bounce" },
     { "name": "user-bounce" },
     { "name": "link" },
-    { "name": "hand-waving" }
+    { "name": "hand-waving" },
+    { "name": "radio" }
   ],
   "Weather": [
     { "name": "sunny-rainy" },
