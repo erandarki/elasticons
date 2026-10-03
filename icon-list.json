@@ -109,6 +109,7 @@
     { "name": "user-bounce", "tags": ["social", "profile", "account", "person", "contact"] },
     { "name": "gear", "tags": ["settings", "cog", "edit", "preferences"] },
     { "name": "webhook", "tags": ["push api", "interface", "callback", "development"] },
+    { "name": "key", "tags": ["password", "login", "authentication", "secure", "unlock", "keychain", "fob"] },
     { "name": "menu-arrow" },
     { "name": "globe-spin" },
     { "name": "cloud-download" },
