@@ -81,6 +81,7 @@
     { "name": "atom", "tags": ["nuclear", "physics", "particle", "molecule", "energy", "chemistry"] },
     { "name": "test-tube", "tags": ["vial", "phial", "flask", "ampoule", "ampule", "lab", "chemistry", "experiment"] },
     { "name": "telescope", "tags": ["astronomy", "space", "discovery", "exploration", "explore", "vision", "perspective", "focus", "stargazing", "observe", "view"] },
+    { "name": "activity", "tags": ["pulse", "action", "motion", "movement", "exercise", "fitness", "healthcare", "heart rate monitor", "vital signs", "vitals", "emergency room", "er", "intensive care", "hospital", "defibrillator", "earthquake", "seismic", "magnitude", "richter scale", "aftershock", "tremor", "shockwave", "audio", "waveform", "synthesizer", "synthesiser", "music", "waveline", "ecg"] },
     { "name": "brain-gear" },
     { "name": "circles-flow" },
     { "name": "headache" }
@@ -110,7 +111,7 @@
     { "name": "gear", "tags": ["settings", "cog", "edit", "preferences"] },
     { "name": "webhook", "tags": ["push api", "interface", "callback", "development"] },
     { "name": "key", "tags": ["password", "login", "authentication", "secure", "unlock", "keychain", "fob"] },
-    { "name": "activity", "tags": ["pulse", "action", "motion", "movement", "exercise", "fitness", "healthcare", "heart rate monitor", "vital signs", "vitals", "emergency room", "er", "intensive care", "hospital", "defibrillator", "earthquake", "seismic", "magnitude", "richter scale", "aftershock", "tremor", "shockwave", "audio", "waveform", "synthesizer", "synthesiser", "music", "waveline", "ecg"] },
+    { "name": "activity" },
     { "name": "menu-arrow" },
     { "name": "globe-spin" },
     { "name": "cloud-download" },
@@ -146,6 +147,7 @@
   "Medical": [
     { "name": "headache", "tags": ["medical", "mind", "mental", "pain", "cerebral", "think", "thought", "insight"] },
     { "name": "test-tube" },
+    { "name": "activity" },
     { "name": "heart" }
   ],
   "Multimedia": [
@@ -163,6 +165,7 @@
     { "name": "megaphone", "tags": ["advertisement", "announcement", "attention", "alert", "loudspeaker", "action", "notification"] },
     { "name": "radio", "tags": ["signal", "broadcast", "connectivity", "live", "frequency"] },
     { "name": "happy-sad-masks" },
+    { "name": "activity" },
     { "name": "binary-code" },
     { "name": "happy-sad" },
     { "name": "refresh" },
