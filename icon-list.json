@@ -110,6 +110,7 @@
     { "name": "gear", "tags": ["settings", "cog", "edit", "preferences"] },
     { "name": "webhook", "tags": ["push api", "interface", "callback", "development"] },
     { "name": "key", "tags": ["password", "login", "authentication", "secure", "unlock", "keychain", "fob"] },
+    { "name": "activity", "tags": ["pulse", "action", "motion", "movement", "exercise", "fitness", "healthcare", "heart rate monitor", "vital signs", "vitals", "emergency room", "er", "intensive care", "hospital", "defibrillator", "earthquake", "seismic", "magnitude", "richter scale", "aftershock", "tremor", "shockwave", "audio", "waveform", "synthesizer", "synthesiser", "music", "waveline", "ecg"] },
     { "name": "menu-arrow" },
     { "name": "globe-spin" },
     { "name": "cloud-download" },
