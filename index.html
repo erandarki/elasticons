@@ -1122,6 +1122,10 @@
             New to elasticons? <a href="#" data-bs-toggle="modal" data-bs-target="#pricesModal">Go Premium.</a>
           </p>
           <form id="auth-container">
+            <!-- Hidden Honeypot Field to trap bots -->
+            <p class="d-none">
+              <label>Don't fill this out if you're human: <input name="confirm-login-entry" tabindex="-1" autocomplete="off"/></label>
+            </p>
             <div class="mb-3">
               <label for="auth-email" class="form-label small">Email</label>
               <input type="email" id="auth-email" name="email" class="form-control py-2" placeholder="your.email@address.com" required>
