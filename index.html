@@ -388,7 +388,7 @@
                 <div class="card-body">
                   <div class="text-body-emphasis fw-semibold">Free</div>
                   <div class="card-title fs-1 text-body-emphasis">$0</div>
-                  <ul class="feature-check list-unstyled text-body-secondary">
+                  <ul class="feature-check list-unstyled">
                     <li>A single starter pack download</li>
                     <li>Production-ready SVG files</li>
                     <li>Load, hover, and click states</li>
@@ -403,11 +403,11 @@
             </div>
             <!-- Premium Plan -->
             <div class="col">
-              <div class="card rounded-3 h-100 border-primary bg-transparent">
+              <div class="card rounded-3 h-100 border-primary bg-transparent shadow-sm">
                 <div class="card-body">
                   <div class="text-primary fw-semibold">Premium</div>
                   <div class="card-title fs-1 text-body-emphasis">$249</div>
-                  <ul class="premium-plan-features feature-check list-unstyled text-body-secondary">
+                  <ul class="premium-plan-features feature-check list-unstyled">
                     <li>1 x user</li>
                     <li>12 months full collection access</li>
                     <li>One-time payment (No auto-renewal)</li>
@@ -417,7 +417,7 @@
                   </ul>
                 </div>
                 <div class="card-footer bg-transparent border-0 p-3 pt-0 d-grid">
-                  <a href="https://elasticons.lemonsqueezy.com/checkout/buy/134f8e10-50c5-427a-abc3-c3db24be6678?embed=1&media=0" id="buy-premium-btn" class="lemonsqueezy-button btn btn-primary btn-lg" role="button">Buy Premium</a>
+                  <a href="https://elasticons.lemonsqueezy.com/checkout/buy/134f8e10-50c5-427a-abc3-c3db24be6678?embed=1&media=0" id="buy-premium-btn" class="lemonsqueezy-button btn btn-primary btn-lg" role="button">Go Premium</a>
                   <button id="paid-plan-btn" type="button" class="d-none btn btn-outline-primary btn-lg" data-bs-dismiss="modal" aria-label="Close" onmouseenter="{ let t = this.querySelector('svg') || this; if(t.getAttribute('data-animating')==='true') return; t.setAttribute('data-animating','true'); t.classList.add('hovered'); }" onanimationend="{ let t = this.querySelector('svg') || this; t.removeAttribute('data-animating'); t.classList.remove('hovered'); }">
                     Enjoy downloading
                     <svg id="btn-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="16" height="16" stroke-width="2">
@@ -1064,8 +1064,9 @@
         <div class="modal-body">
           <p>Have questions, comments, or icon suggestions? Drop us an email using the form below or contact us via email at <a href="mailto:contact@elasticons.com">contact@elasticons.com</a></p>
           <form id="contactForm" name="contact" method="POST">
+            <!-- Hidden Honeypot Field to trap bots -->
             <p class="d-none">
-              <label>Don't fill this out: <input name="confirm-entry" tabindex="-1" autocomplete="off" /></label>
+              <label>Don't fill this out if you're human: <input name="confirm-entry" tabindex="-1" autocomplete="off"/></label>
             </p>
             <div class="mb-3">
               <label for="emailInput" class="form-label small">Email</label>
