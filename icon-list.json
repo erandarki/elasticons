@@ -278,6 +278,8 @@
   "Fintech & Crypto": [
     { "name": "bitcoin", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "btc"] },
     { "name": "ethereum", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "eth"] },
-    { "name": "usdc", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "dollar"] }
+    { "name": "usdc", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "dollar"] },
+    { "name": "bnb", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "binance"] },
+    { "name": "tether", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "usdt"] }
   ]
 }
