@@ -274,5 +274,10 @@
     { "name": "library" },
     { "name": "binary-code" },
     { "name": "language-scale" }
+  ],
+  "Fintech & Crypto": [
+    { "name": "bitcoin", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "btc"] },
+    { "name": "ethereum", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "eth"] },
+    { "name": "usdc", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "dollar"] }
   ]
 }
