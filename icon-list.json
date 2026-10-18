@@ -217,6 +217,7 @@
     { "name": "pencil-draw", "tags": ["edit", "change", "create", "draw", "writer", "writing", "ink", "marker", "artist", "design"] },
     { "name": "paperclip", "tags": ["attachment", "file"] },
     { "name": "search", "tags": ["find", "scan", "magnifier", "magnifying glass", "lens", "locate", "explore", "discover", "enlarge", "zoom"] },
+    { "name": "book-open", "tags": ["reading", "pages", "booklet", "magazine", "leaflet", "pamphlet", "library", "writing", "written", "writer", "author", "story", "script", "screenplay", "fiction", "novel", "information", "knowledge", "education", "high school", "university", "college", "academy", "student", "study", "learning", "homework", "research", "documentation", "revealed", "blank", "plain"] },
     { "name": "slider-vertical" },
     { "name": "checklist" },
     { "name": "image" },
@@ -273,6 +274,7 @@
     { "name": "graduation-cap", "tags": ["school", "university", "learn", "study", "mortarboard", "education", "ceremony", "academic", "hat", "diploma", "bachlor's", "master's", "doctorate"] },
     { "name": "library" },
     { "name": "binary-code" },
+    { "name": "book-open" },
     { "name": "language-scale" }
   ],
   "Fintech & Crypto": [
@@ -284,7 +286,18 @@
     { "name": "xrp", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "ripple"] },
     { "name": "euro", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "europe", "symbol", "€"] },
     { "name": "bar-chart" },
-    { "name": "binary-code" },
     { "name": "diamond" }
+  ],
+  "Cybersecurity": [
+    { "name": "binary-code" },
+    { "name": "code-flip" },
+    { "name": "globe-spin" },
+    { "name": "globe-bounce" },
+    { "name": "key" },
+    { "name": "lock-shake" },
+    { "name": "lock-unlock" },
+    { "name": "touch-id" },
+    { "name": "network-connection" },
+    { "name": "webhook" }
   ]
 }
