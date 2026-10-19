@@ -38,7 +38,9 @@
   ],
   "Analytics": [
     { "name": "bar-chart", "tags": ["analytics", "data", "statistics", "diagram", "graph", "trending"] },
-    { "name": "checklist", "tags": ["task", "todo", "done", "complete", "items", "tick"] }
+    { "name": "checklist", "tags": ["task", "todo", "done", "complete", "items", "tick"] },
+    { "name": "pie-chart", "tags": ["statistics", "analytics", "diagram", "presentation"] },
+    { "name": "diagram-venn", "tags": ["statistics", "analytics", "presentation"] }
   ],
   "Connectivity": [
     { "name": "bluetooth", "tags": ["wireless"] },
@@ -268,6 +270,8 @@
     { "name": "paperclip" },
     { "name": "image" },
     { "name": "images" },
+    { "name": "pie-chart" },
+    { "name": "diagram-venn" },
     { "name": "image-video" }
   ],
   "Education": [
@@ -286,6 +290,8 @@
     { "name": "xrp", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "ripple"] },
     { "name": "euro", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "europe", "symbol", "€"] },
     { "name": "bar-chart" },
+    { "name": "diagram-venn" },
+    { "name": "pie-chart" },
     { "name": "diamond" }
   ],
   "Cybersecurity": [
