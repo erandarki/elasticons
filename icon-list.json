@@ -289,6 +289,8 @@
     { "name": "tether", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "usdt"] },
     { "name": "xrp", "tags": ["cryptocurrency", "digital currency", "blockchain", "finance", "crypto", "coin", "ripple"] },
     { "name": "euro", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "europe", "symbol", "€"] },
+    { "name": "pound", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "britain", "sterling", "symbol", "gbp", "£"] },
+    { "name": "yen", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "japan", "symbol", "jpy", "¥"] },
     { "name": "bar-chart" },
     { "name": "diagram-venn" },
     { "name": "pie-chart" },
