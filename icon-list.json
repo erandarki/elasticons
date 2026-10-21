@@ -291,6 +291,7 @@
     { "name": "euro", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "europe", "symbol", "€"] },
     { "name": "pound", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "britain", "sterling", "symbol", "gbp", "£"] },
     { "name": "yen", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "japan", "symbol", "jpy", "¥"] },
+    { "name": "withdraw", "tags": ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "expense", "payout", "debit", "spending", "banknote", "atm"] },
     { "name": "bar-chart" },
     { "name": "diagram-venn" },
     { "name": "pie-chart" },
