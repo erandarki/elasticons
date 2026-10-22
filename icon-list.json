@@ -40,7 +40,8 @@
     { "name": "bar-chart", "tags": ["analytics", "data", "statistics", "diagram", "graph", "trending"] },
     { "name": "checklist", "tags": ["task", "todo", "done", "complete", "items", "tick"] },
     { "name": "pie-chart", "tags": ["statistics", "analytics", "diagram", "presentation"] },
-    { "name": "diagram-venn", "tags": ["statistics", "analytics", "presentation"] }
+    { "name": "diagram-venn", "tags": ["statistics", "analytics", "presentation"] },
+    { "name": "diagram-venn-dual", "tags": ["statistics", "analytics", "presentation"] }
   ],
   "Connectivity": [
     { "name": "bluetooth", "tags": ["wireless"] },
@@ -220,6 +221,7 @@
     { "name": "paperclip", "tags": ["attachment", "file"] },
     { "name": "search", "tags": ["find", "scan", "magnifier", "magnifying glass", "lens", "locate", "explore", "discover", "enlarge", "zoom"] },
     { "name": "book-open", "tags": ["reading", "pages", "booklet", "magazine", "leaflet", "pamphlet", "library", "writing", "written", "writer", "author", "story", "script", "screenplay", "fiction", "novel", "information", "knowledge", "education", "high school", "university", "college", "academy", "student", "study", "learning", "homework", "research", "documentation", "revealed", "blank", "plain"] },
+    { "name": "scissors", "tags": ["cut", "trim", "snip", "clip", "shear", "blade", "tool", "utility", "stationery", "craft"] },
     { "name": "slider-vertical" },
     { "name": "checklist" },
     { "name": "image" },
@@ -238,6 +240,7 @@
     { "name": "layout", "tags": ["window", "webpage", "block", "section", "template", "grid", "structure", "panel"] },
     { "name": "grid", "tags": ["app", "home", "start", "layout"] },
     { "name": "carousel-slider" },
+    { "name": "scissors" },
     { "name": "slider-vertical" },
     { "name": "pencil-draw" },
     { "name": "checklist" },
@@ -272,6 +275,7 @@
     { "name": "images" },
     { "name": "pie-chart" },
     { "name": "diagram-venn" },
+    { "name": "diagram-venn-dual" },
     { "name": "image-video" }
   ],
   "Education": [
@@ -292,8 +296,11 @@
     { "name": "pound", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "britain", "sterling", "symbol", "gbp", "£"] },
     { "name": "yen", "tags": ["currency", "money", "payment", "finance", "coin", "economy", "banking", "japan", "symbol", "jpy", "¥"] },
     { "name": "withdraw", "tags": ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "expense", "payout", "debit", "spending", "banknote", "atm"] },
+    { "name": "bank", "tags": ["building", "capitol", "finance", "money", "museum", "art gallery", "hall", "institute", "pediment", "portico", "doric", "columns", "pillars", "classical", "architecture", "government", "institution", "monument", "site", "history", "historic", "temple", "ancient", "structure"] },
+    { "name": "scale", "tags": ["balance", "legal", "license", "right", "rule", "law", "justice", "weight", "measure", "compare", "judge", "fair", "ethics", "decision"] },
     { "name": "bar-chart" },
     { "name": "diagram-venn" },
+    { "name": "diagram-venn-dual" },
     { "name": "pie-chart" },
     { "name": "diamond" }
   ],
