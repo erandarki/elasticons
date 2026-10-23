@@ -40,6 +40,7 @@
     { "name": "bar-chart", "tags": ["analytics", "data", "statistics", "diagram", "graph", "trending"] },
     { "name": "checklist", "tags": ["task", "todo", "done", "complete", "items", "tick"] },
     { "name": "pie-chart", "tags": ["statistics", "analytics", "diagram", "presentation"] },
+    { "name": "pie-chart-multi", "tags": ["statistics", "analytics", "diagram", "presentation"] },
     { "name": "diagram-venn", "tags": ["statistics", "analytics", "presentation"] },
     { "name": "diagram-venn-dual", "tags": ["statistics", "analytics", "presentation"] }
   ],
@@ -274,6 +275,7 @@
     { "name": "image" },
     { "name": "images" },
     { "name": "pie-chart" },
+    { "name": "pie-chart-multi" },
     { "name": "diagram-venn" },
     { "name": "diagram-venn-dual" },
     { "name": "image-video" }
@@ -302,6 +304,7 @@
     { "name": "diagram-venn" },
     { "name": "diagram-venn-dual" },
     { "name": "pie-chart" },
+    { "name": "pie-chart-multi" },
     { "name": "diamond" }
   ],
   "Cybersecurity": [
