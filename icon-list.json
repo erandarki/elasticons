@@ -300,6 +300,7 @@
     { "name": "withdraw", "tags": ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "expense", "payout", "debit", "spending", "banknote", "atm"] },
     { "name": "bank", "tags": ["building", "capitol", "finance", "money", "museum", "art gallery", "hall", "institute", "pediment", "portico", "doric", "columns", "pillars", "classical", "architecture", "government", "institution", "monument", "site", "history", "historic", "temple", "ancient", "structure"] },
     { "name": "scale", "tags": ["balance", "legal", "license", "right", "rule", "law", "justice", "weight", "measure", "compare", "judge", "fair", "ethics", "decision"] },
+    { "name": "wallet", "tags": ["money", "finance", "pocket", "coin", "saving", "cha-ching", "ka-ching", "wealth", "flip", "penny", "cent"] },
     { "name": "bar-chart" },
     { "name": "diagram-venn" },
     { "name": "diagram-venn-dual" },
