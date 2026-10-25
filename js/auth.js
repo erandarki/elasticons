@@ -1,1 +1,222 @@
-const _0x149462=_0x412c;(function(_0x170add,_0x35da0c){const _0x3e61c1=_0x412c,_0x178ab3=_0x170add();while(!![]){try{const _0xe26867=-parseInt(_0x3e61c1(0x17d))/0x1+-parseInt(_0x3e61c1(0x178))/0x2+parseInt(_0x3e61c1(0x166))/0x3*(parseInt(_0x3e61c1(0x168))/0x4)+-parseInt(_0x3e61c1(0x149))/0x5+-parseInt(_0x3e61c1(0x18b))/0x6*(-parseInt(_0x3e61c1(0x153))/0x7)+-parseInt(_0x3e61c1(0x162))/0x8*(parseInt(_0x3e61c1(0x154))/0x9)+parseInt(_0x3e61c1(0x196))/0xa*(parseInt(_0x3e61c1(0x15b))/0xb);if(_0xe26867===_0x35da0c)break;else _0x178ab3['push'](_0x178ab3['shift']());}catch(_0x4722a0){_0x178ab3['push'](_0x178ab3['shift']());}}}(_0x5c5c,0x31d99));const SB_URL=_0x149462(0x195),SB_KEY=_0x149462(0x157),elasticonsDb=supabase[_0x149462(0x19c)](SB_URL,SB_KEY,{'global':{'headers':{'Accept':_0x149462(0x16b),'Content-Type':_0x149462(0x16b)}}});function _0x5c5c(){const _0x232181=['submit','elasticons_device_id','from','loginFormResponse','auth-container','SIGNED_OUT','authContainer','412230gwcUVr','login-btn','.continue-text','setItem','profiles','312023BUaaBU','remove','toUpperCase','continue-btn','authEmail','addEventListener','signOut','pricesModal','logout-btn','loginBtn','value','access_expires_at','alert-danger','message','1562178XqBnrs','Auth\x20Check\x20Note:','charAt','SIGNED_IN','update','signInWithOtp','textContent','add','is_paid,\x20access_expires_at,\x20last_session_id','confirm-login-entry','https://vrfhbulqufibjfopxvyn.supabase.co','2611990jDqBzA','click','logoutBtn','checkAccess','warn','reset','createClient','isPaid','auth','visually-hidden','onAuthStateChange','1657185ylKuBL','toLowerCase','reload','d-none','last_session_id','continueBtn','target','Modal','.icon-wrapper','alert-animation','7hYKZYB','32769uaHOje','preventDefault','querySelector','sb_publishable_0nYL47hXBuSUbOGjVUy82w_v8oVE9AS','disabled','getElementById','Great,\x20check\x20your\x20inbox!\x20We\x27ve\x20sent\x20a\x20secure\x20access\x20link\x20to\x20','33iVOtEQ','is_paid','replace','classList','lastAuthCheck','.alert','loadAllIcons','264tbwrhX','.\x20Please\x20check\x20your\x20spam\x20folder\x20in\x20case\x20you\x20didn\x27t\x20get\x20the\x20email.','hide','maybeSingle','3EpebZM','origin','519812osOKlp','updateControlStates','alert-primary','application/json','select','loginAlertWrapper','function','INITIAL_SESSION','.spinner-border'];_0x5c5c=function(){return _0x232181;};return _0x5c5c();}window[_0x149462(0x145)]=![];let isChecking=![];const authElements={'continueBtn':document[_0x149462(0x159)](_0x149462(0x180)),'authEmail':document[_0x149462(0x159)]('auth-email'),'loginBtn':document[_0x149462(0x159)](_0x149462(0x179)),'logoutBtn':document[_0x149462(0x159)](_0x149462(0x185)),'authContainer':document['getElementById'](_0x149462(0x175))};function _0x412c(_0x3235c3,_0x30f88e){_0x3235c3=_0x3235c3-0x145;const _0x5c5cd8=_0x5c5c();let _0x412c5a=_0x5c5cd8[_0x3235c3];return _0x412c5a;}window[_0x149462(0x199)]=async()=>{const _0x4b6176=_0x149462;if(isChecking)return;isChecking=!![];try{const {data:{session:_0x15cd17},error:_0x27aab6}=await elasticonsDb[_0x4b6176(0x146)]['getSession']();if(_0x27aab6)throw _0x27aab6;let _0x3417a5=![];if(_0x15cd17){if(authElements[_0x4b6176(0x186)])authElements[_0x4b6176(0x186)][_0x4b6176(0x15e)][_0x4b6176(0x192)](_0x4b6176(0x14c));if(authElements[_0x4b6176(0x198)])authElements[_0x4b6176(0x198)][_0x4b6176(0x15e)][_0x4b6176(0x17e)](_0x4b6176(0x14c));const {data:_0x36aa85,error:_0x22fe1f}=await elasticonsDb[_0x4b6176(0x173)](_0x4b6176(0x17c))[_0x4b6176(0x16c)](_0x4b6176(0x193))['eq']('id',_0x15cd17['user']['id'])[_0x4b6176(0x165)]();if(_0x36aa85){let _0x4a7fcf=localStorage['getItem'](_0x4b6176(0x172));!_0x4a7fcf&&(_0x4a7fcf=crypto['randomUUID'](),localStorage[_0x4b6176(0x17b)](_0x4b6176(0x172),_0x4a7fcf));if(_0x36aa85['last_session_id']&&_0x36aa85[_0x4b6176(0x14d)]!==_0x4a7fcf){console['warn']('Elasticons:\x20Logged\x20in\x20from\x20another\x20device.\x20Signing\x20out.'),await elasticonsDb[_0x4b6176(0x146)][_0x4b6176(0x183)]();return;}!_0x36aa85[_0x4b6176(0x14d)]&&await elasticonsDb[_0x4b6176(0x173)](_0x4b6176(0x17c))['update']({'last_session_id':_0x4a7fcf})['eq']('id',_0x15cd17['user']['id']);!_0x36aa85['last_session_id']&&await elasticonsDb[_0x4b6176(0x173)](_0x4b6176(0x17c))[_0x4b6176(0x18f)]({'last_session_id':_0x15cd17['access_token']})['eq']('id',_0x15cd17['user']['id']);if(_0x36aa85[_0x4b6176(0x15c)]){const _0x42806d=new Date(),_0x29e7d2=_0x36aa85[_0x4b6176(0x188)]?new Date(_0x36aa85[_0x4b6176(0x188)]):null;_0x3417a5=_0x29e7d2&&_0x29e7d2>_0x42806d;}}}else{if(authElements[_0x4b6176(0x186)])authElements[_0x4b6176(0x186)][_0x4b6176(0x15e)][_0x4b6176(0x17e)](_0x4b6176(0x14c));if(authElements[_0x4b6176(0x198)])authElements[_0x4b6176(0x198)][_0x4b6176(0x15e)][_0x4b6176(0x192)]('d-none');}if(window['isPaid']!==_0x3417a5){window[_0x4b6176(0x145)]=_0x3417a5;if(typeof window[_0x4b6176(0x169)]==='function')window[_0x4b6176(0x169)]();if(typeof window[_0x4b6176(0x161)]==='function')window['loadAllIcons']();}else{if(!document['querySelector'](_0x4b6176(0x151))){if(typeof window[_0x4b6176(0x161)]===_0x4b6176(0x16e))window[_0x4b6176(0x161)]();}}}catch(_0x564c1c){console[_0x4b6176(0x19a)](_0x4b6176(0x18c),_0x564c1c[_0x4b6176(0x18a)]);if(typeof window[_0x4b6176(0x161)]===_0x4b6176(0x16e))window[_0x4b6176(0x161)]();}finally{isChecking=![];}};function toSentenceCase(_0x490a2e){const _0x4fc763=_0x149462;if(!_0x490a2e)return'';let _0x25855d=_0x490a2e[_0x4fc763(0x18d)](0x0)[_0x4fc763(0x17f)]()+_0x490a2e['slice'](0x1)[_0x4fc763(0x14a)]();return!_0x25855d['endsWith']('.')&&(_0x25855d+='.'),_0x25855d;}authElements[_0x149462(0x177)]&&authElements['authContainer'][_0x149462(0x182)](_0x149462(0x171),async _0x31386f=>{const _0x2e224f=_0x149462;_0x31386f[_0x2e224f(0x155)]();const _0x1741e6=new FormData(_0x31386f[_0x2e224f(0x14f)]),_0x18d235=authElements[_0x2e224f(0x181)]?.[_0x2e224f(0x187)],_0x24fedb=document[_0x2e224f(0x159)](_0x2e224f(0x16d)),_0x18efc9=document[_0x2e224f(0x159)](_0x2e224f(0x174)),_0x4da129=_0x24fedb[_0x2e224f(0x156)](_0x2e224f(0x160)),_0x2383fe=authElements['continueBtn'][_0x2e224f(0x156)](_0x2e224f(0x170)),_0x15164d=authElements[_0x2e224f(0x14e)][_0x2e224f(0x156)](_0x2e224f(0x17a));if(_0x1741e6['get'](_0x2e224f(0x194))){console[_0x2e224f(0x19a)]('Login\x20spambot\x20blocked.'),_0x31386f['target'][_0x2e224f(0x19b)]();return;}_0x24fedb[_0x2e224f(0x15e)][_0x2e224f(0x17e)](_0x2e224f(0x152)),_0x2383fe['classList'][_0x2e224f(0x17e)](_0x2e224f(0x147)),_0x15164d[_0x2e224f(0x15e)][_0x2e224f(0x192)](_0x2e224f(0x147)),authElements[_0x2e224f(0x14e)][_0x2e224f(0x158)]=!![];const {error:_0x1fe616}=await elasticonsDb[_0x2e224f(0x146)][_0x2e224f(0x190)]({'email':_0x18d235,'options':{'emailRedirectTo':window['location'][_0x2e224f(0x167)]}});_0x1fe616?(_0x18efc9[_0x2e224f(0x191)]=toSentenceCase(_0x1fe616['message']),_0x4da129[_0x2e224f(0x15e)][_0x2e224f(0x15d)](_0x2e224f(0x16a),_0x2e224f(0x189)),_0x2383fe['classList']['add'](_0x2e224f(0x147)),_0x15164d['classList']['remove']('visually-hidden'),authElements[_0x2e224f(0x14e)][_0x2e224f(0x158)]=![]):(_0x18efc9['textContent']=_0x2e224f(0x15a)+_0x18d235+_0x2e224f(0x163),_0x4da129[_0x2e224f(0x15e)][_0x2e224f(0x15d)]('alert-danger','alert-primary'),_0x2383fe[_0x2e224f(0x15e)][_0x2e224f(0x192)]('visually-hidden'),_0x15164d[_0x2e224f(0x15e)][_0x2e224f(0x17e)](_0x2e224f(0x147)),authElements['continueBtn'][_0x2e224f(0x158)]=![]),_0x24fedb['classList'][_0x2e224f(0x192)](_0x2e224f(0x152));});authElements[_0x149462(0x198)]&&authElements[_0x149462(0x198)][_0x149462(0x182)](_0x149462(0x197),()=>elasticonsDb[_0x149462(0x146)][_0x149462(0x183)]());window['addEventListener']('LemonSqueezy.Checkout.Success',_0x1ee374=>{const _0xe957d1=_0x149462;window[_0xe957d1(0x145)]=!![];if(typeof window[_0xe957d1(0x169)]===_0xe957d1(0x16e))window[_0xe957d1(0x169)]();if(typeof window[_0xe957d1(0x161)]===_0xe957d1(0x16e))window[_0xe957d1(0x161)]();const _0x2fc610=document[_0xe957d1(0x159)](_0xe957d1(0x184));if(_0x2fc610){const _0x427db5=bootstrap[_0xe957d1(0x150)]['getInstance'](_0x2fc610);if(_0x427db5)_0x427db5[_0xe957d1(0x164)]();}}),elasticonsDb[_0x149462(0x146)][_0x149462(0x148)]((_0x439f6f,_0x13fa4f)=>{const _0x24e33f=_0x149462;(_0x439f6f===_0x24e33f(0x16f)||_0x439f6f===_0x24e33f(0x18e))&&window['checkAccess'](),_0x439f6f===_0x24e33f(0x176)&&(window[_0x24e33f(0x145)]=![],sessionStorage['removeItem'](_0x24e33f(0x15f)),location[_0x24e33f(0x14b)]());});
+/* ========================================================================== */
+/* AUTH & PAYMENT LOGIC.                                                      */
+/* ========================================================================== */
+
+// 1. Setup Supabase
+const SB_URL = 'https://vrfhbulqufibjfopxvyn.supabase.co';
+const SB_KEY = 'sb_publishable_0nYL47hXBuSUbOGjVUy82w_v8oVE9AS';
+
+const elasticonsDb = supabase.createClient(SB_URL, SB_KEY, {
+    global: { headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } }
+});
+
+// 2. Global State (Shared with app.js)
+window.isPaid = false;
+let isChecking = false;
+
+// 3. Auth DOM Elements
+const authElements = {
+  // Modal Elements
+  continueBtn: document.getElementById('continue-btn'),
+  authEmail: document.getElementById('auth-email'),
+  // Navbar Elements
+  loginBtn: document.getElementById('login-btn'),
+  logoutBtn: document.getElementById('logout-btn'),
+  // The form
+  authContainer: document.getElementById('auth-container'),
+};
+
+/**
+ * Checks the user's session and queries the profiles table for 'is_paid'
+ */
+window.checkAccess = async () => {
+    if (isChecking) return;
+    isChecking = true;
+
+    try {
+        const { data: { session }, error: sessionError } = await elasticonsDb.auth.getSession();
+        if (sessionError) throw sessionError;
+
+        let currentPaidStatus = false;
+
+        if (session) {
+            // UI Toggle
+            if (authElements.loginBtn) authElements.loginBtn.classList.add('d-none');
+            if (authElements.logoutBtn) authElements.logoutBtn.classList.remove('d-none');
+
+            // 1. Fetch profile data (including our new session column)
+            const { data, error } = await elasticonsDb
+                .from('profiles')
+                .select('is_paid, access_expires_at, last_session_id')
+                .eq('id', session.user.id)
+                .maybeSingle();
+
+            if (data) {
+                // SINGLE SESSION LOGIC (Using Persistent Device ID)
+                let deviceId = localStorage.getItem('elasticons_device_id');
+                if (!deviceId) {
+                    deviceId = crypto.randomUUID();
+                    localStorage.setItem('elasticons_device_id', deviceId);
+                }
+
+                // If there's a stored session and it doesn't match this physical device...
+                if (data.last_session_id && data.last_session_id !== deviceId) {
+                    console.warn("Elasticons: Logged in from another device. Signing out.");
+                    await elasticonsDb.auth.signOut();
+                    return; // Stop execution
+                }
+
+                // If this is a fresh login or the session ID is missing, update the database
+                if (!data.last_session_id) {
+                    await elasticonsDb
+                        .from('profiles')
+                        .update({ last_session_id: deviceId })
+                        .eq('id', session.user.id);
+                }
+
+                // If this is a fresh login or the session ID is missing, update it
+                if (!data.last_session_id) {
+                    await elasticonsDb
+                        .from('profiles')
+                        .update({ last_session_id: session.access_token })
+                        .eq('id', session.user.id);
+                }
+
+                // 3. EXPIRATION LOGIC
+                if (data.is_paid) {
+                    const now = new Date();
+                    const expiry = data.access_expires_at ? new Date(data.access_expires_at) : null;
+                    currentPaidStatus = expiry && expiry > now;
+                }
+            }
+        } else {
+            // Logged out UI state
+            if (authElements.loginBtn) authElements.loginBtn.classList.remove('d-none');
+            if (authElements.logoutBtn) authElements.logoutBtn.classList.add('d-none');
+        }
+
+        // 4. PREVENT FLICKER
+        // Only trigger heavy re-renders if the paid status actually CHANGED 
+        // from what it was previously in the window global.
+        if (window.isPaid !== currentPaidStatus) {
+            window.isPaid = currentPaidStatus;
+            if (typeof window.updateControlStates === 'function') window.updateControlStates();
+            if (typeof window.loadAllIcons === 'function') window.loadAllIcons();
+        } else if (!document.querySelector('.icon-wrapper')) { 
+            // If the grid is empty (first load), we must render it
+            if (typeof window.loadAllIcons === 'function') window.loadAllIcons();
+        }
+
+    } catch (err) {
+        console.warn("Auth Check Note:", err.message);
+        // Fallback: ensure icons load even if network fails
+        if (typeof window.loadAllIcons === 'function') window.loadAllIcons();
+    } finally {
+        isChecking = false;
+    }
+};
+
+/* -------------------------------------------------------------------------- */
+/* Event Listeners                                                            */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Converts a string to Sentence case.
+ * e.g., "invalid login credentials" -> "Invalid login credentials."
+ */
+function toSentenceCase(str) {
+    if (!str) return '';
+    // Capitalize first letter and lowercase the rest
+    let formatted = str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    // Add a period at the end if it's missing
+    if (!formatted.endsWith('.')) {
+        formatted += '.';
+    }
+    return formatted;
+}
+
+// Send Magic Link
+if (authElements.authContainer) {
+    authElements.authContainer.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      const email = authElements.authEmail?.value;
+      const wrapper = document.getElementById('loginAlertWrapper');
+      const responseText = document.getElementById('loginFormResponse');
+      const alertDiv = wrapper.querySelector('.alert');
+      const spinner = authElements.continueBtn.querySelector('.spinner-border');
+      const btnText = authElements.continueBtn.querySelector('.continue-text');
+
+      // 1. HONEYPOT CHECK: If a bot fills out the hidden field, stop immediately!
+      if (formData.get('confirm-login-entry')) {
+          console.warn('Login spambot blocked.');
+          e.target.reset();
+          return; // Silently drop the request
+      }
+
+      // Reset state before starting
+      wrapper.classList.remove('alert-animation');
+      spinner.classList.remove('visually-hidden');
+      btnText.classList.add('visually-hidden');
+      authElements.continueBtn.disabled = true;
+
+      const { error } = await elasticonsDb.auth.signInWithOtp({
+          email: email,
+          options: { emailRedirectTo: window.location.origin }
+      });
+
+      if (error) {
+          // FAILED STATE
+          responseText.textContent = toSentenceCase(error.message);
+          alertDiv.classList.replace('alert-primary', 'alert-danger');
+          spinner.classList.add('visually-hidden');
+          btnText.classList.remove('visually-hidden');
+          authElements.continueBtn.disabled = false;
+      } else {
+          // SUCCESS STATE
+          responseText.textContent = `Great, check your inbox! We've sent a secure access link to ${email}. Please check your spam folder in case you didn't get the email.`;
+          alertDiv.classList.replace('alert-danger', 'alert-primary');
+          spinner.classList.add('visually-hidden');
+          btnText.classList.remove('visually-hidden');
+          authElements.continueBtn.disabled = false;
+      }
+
+      // Trigger the animation
+      wrapper.classList.add('alert-animation');
+    });
+}
+
+// Logout
+if (authElements.logoutBtn) {
+    authElements.logoutBtn.addEventListener('click', () => elasticonsDb.auth.signOut());
+}
+
+// Listen for Lemon Squeezy Payments
+window.addEventListener('LemonSqueezy.Checkout.Success', (event) => {
+    window.isPaid = true;
+    
+    // Force the UI to update and re-render the SVGs instantly
+    if (typeof window.updateControlStates === 'function') window.updateControlStates();
+    if (typeof window.loadAllIcons === 'function') window.loadAllIcons();
+    
+    // Hide the pricing modal automatically
+    const modalEl = document.getElementById('pricesModal');
+    if (modalEl) {
+        const modalInstance = bootstrap.Modal.getInstance(modalEl);
+        if (modalInstance) modalInstance.hide();
+    }
+});
+
+// Listen for Magic Link Redirects
+elasticonsDb.auth.onAuthStateChange((event, session) => {
+    if (event === 'INITIAL_SESSION' || event === 'SIGNED_IN') {
+        // ALWAYS check access, even if logged out, so free PNGs load
+        window.checkAccess(); 
+    }
+    if (event === 'SIGNED_OUT') {
+        window.isPaid = false;
+        sessionStorage.removeItem('lastAuthCheck'); 
+        location.reload();
+    }
+});
