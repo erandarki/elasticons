@@ -74,7 +74,6 @@
     { "name": "fire", "tags": ["campfire", "camping", "burning", "lit", "warmth", "outdoors", "wood", "twigs", "sticks", "flame"] },
     { "name": "star-spark", "tags": ["favorite", "like", "rating", "bookmark"] },
     { "name": "day-night", "tags": ["dark", "light", "moon", "sun", "brightness", "theme", "appearance"] },
-    { "name": "recycle", "tags": ["environment", "trash", "sustainability", "salvage", "arrows"] },
     { "name": "sunny-rainy", "tags": ["weather", "partly", "rainfall"] },
     { "name": "sun-moon", "tags": ["dark", "light", "day", "night", "brightness", "theme", "appearance"] },
     { "name": "sun", "tags": ["light", "day", "warm", "hot", "brightness", "summer", "weather"] },
@@ -95,7 +94,6 @@
     { "name": "shredder", "tags": ["file", "paper", "tear", "delete", "destroy", "remove", "erase", "document", "destruction", "trash", "dispose", "disposal", "waste", "office"] },
     { "name": "printer", "tags": ["fax", "office"] },
     { "name": "trash-bin", "tags": ["garbage", "delete", "remove", "waste"] },
-    { "name": "recycle" },
     { "name": "checklist" }
   ],
   "Account & Access": [
@@ -181,8 +179,8 @@
     { "name": "heart" }
   ],
   "Animals": [
-    { "name": "dog-love", "tags": ["pet", "puppy", "canine"] },
-    { "name": "cat-love", "tags": ["pet", "kitten", "feline"] }
+    { "name": "dog-love", "tags": ["pet", "puppy", "canine", "heart"] },
+    { "name": "cat-love", "tags": ["pet", "kitten", "feline", "heart"] }
   ],
   "Devices": [
     { "name": "cpu", "tags": ["processor", "cores", "technology", "computer", "chip", "circuit", "memory", "ram", "specs", "gigahertz", "ghz"] },
@@ -195,8 +193,7 @@
     { "name": "radio" }
   ],
   "Food & Drink": [
-    { "name": "coffee-love", "tags": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"] },
-    { "name": "recycle" }
+    { "name": "coffee-love", "tags": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"] }
   ],
   "Social": [
     { "name": "love-letter", "tags": ["like", "emotion", "feedback", "positive", "interest", "valentine", "dating", "date", "romance", "personal", "crush", "secret", "writing", "reading", "favorite"] },
@@ -263,8 +260,7 @@
     { "name": "circles-flow" },
     { "name": "globe-spin" },
     { "name": "globe-team" },
-    { "name": "head-gears" },
-    { "name": "recycle" }
+    { "name": "head-gears" }
   ],
   "Files & Folders": [
     { "name": "folder", "tags": ["directory", "storage", "document"] },
